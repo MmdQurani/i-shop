@@ -1,6 +1,8 @@
 import React , { useState } from 'react'
 import { useRoutes } from 'react-router-dom'
 import RoutesValue from './Routes'
+import Header from './Component/Header/Header'
+import Footer from './Component/Footer/Footer'
 import './App.css'
 
 function App() {
@@ -8,7 +10,9 @@ function App() {
 
   return (
     <>
+    <Header></Header>
     {setRoutes}
+    <Footer></Footer>
     </>
   )
 }
