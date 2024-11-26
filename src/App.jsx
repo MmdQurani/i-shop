@@ -1,12 +1,14 @@
-import { useState } from 'react'
+import React , { useState } from 'react'
+import { useRoutes } from 'react-router-dom'
+import RoutesValue from './Routes'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const setRoutes = useRoutes(RoutesValue);
 
   return (
     <>
-    <h1 className='text-danger'>hello world</h1>
+    {setRoutes}
     </>
   )
 }
