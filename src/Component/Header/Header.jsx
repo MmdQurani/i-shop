@@ -9,6 +9,7 @@ function Header() {
     <header className='headerSize bg-main'>
       <Container className='p-0 d-flex flex-column h-100'>
         <Topbar />
+        <div className='after-item py-4'></div>
         <Navbar />
       </Container>
     </header>
