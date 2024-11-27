@@ -1,0 +1,13 @@
+@font-face {
+  font-family: Dirooz;
+  src: url('../public/assets/font/Dirooz-FD.ttf');
+  font-weight: bold;
+}
+
+.fm-dirooz{
+  font-family: Dirooz;
+}
+
+body {
+  font-family: Dirooz !important;
+}
