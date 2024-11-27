@@ -1,0 +1,40 @@
+#root{
+  --bg-main: #FFFFFF;
+  --bg-btn: #F04055;
+  --text-color-main: #021857;
+}
+
+.headerSize {
+  width: 100% !important;
+  height: 11rem !important;
+}
+
+.topBar {
+  width: 100% !important;
+  height: 55% !important;
+}
+
+.bg-main {
+  background-color: var(--bg-main) !important;
+}
+
+.bg-btn {
+  background-color: var(--bg-btn) !important;
+  color: var(--bg-main) !important;
+}
+
+.text-color-main {
+  color: var(--text-color-main) !important;
+}
+
+.left-box-topbar {
+  width: 20% !important;
+  height: 100% !important;
+  background-color: aquamarine;
+}
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1500px !important;
+  }
+}
