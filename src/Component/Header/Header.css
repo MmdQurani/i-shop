@@ -45,6 +45,15 @@
   background-color: #1e36bd30;
 }
 
+.after-item-shadow::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-bottom: 1px solid #1e36bd1e;
+  box-shadow: 0 2px 5px #1e36bd30 , 0 2px 5px #1e36bd30 , 0 2px 5px #1e36bd30;
+}
+
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1500px !important;

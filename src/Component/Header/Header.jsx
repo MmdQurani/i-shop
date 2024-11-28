@@ -11,6 +11,7 @@ function Header() {
         <Topbar />
         <div className='after-item py-4'></div>
         <Navbar />
+        <div className='after-item-shadow py-4'></div>
       </Container>
     </header>
   )

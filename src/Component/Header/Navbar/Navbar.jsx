@@ -6,7 +6,7 @@ import './Navbar.css'
 
 function Navbar() {
   return (
-    <div style={{ height: '45%' }} className='d-flex justify-content-center align-items-center flex-row'>
+    <div className='d-flex justify-content-center align-items-center flex-row'>
       <div className='d-flex justify-content-between align-items-center flex-row w-100 h-100'>
           <div className='d-flex justify-content-center align-items-center h-100' style={{ width: 'max-content' }}>
             <span className='fs-4 text-color-two'>شگفت انگیزشو</span>
