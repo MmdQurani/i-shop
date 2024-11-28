@@ -1,0 +1,14 @@
+.link-st {
+  text-decoration: none;
+  color: var(--text-color-main);
+  transition: 200ms;
+  font-size: 15px;
+}
+
+.link-st:hover{
+  color: var(--text-hover);
+}
+
+.text-color-two {
+  color: var(--text-hover);
+}

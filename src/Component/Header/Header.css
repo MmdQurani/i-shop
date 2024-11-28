@@ -1,9 +1,3 @@
-#root{
-  --bg-main: #FFFFFF;
-  --bg-btn: #F04055;
-  --text-color-main: #021857;
-}
-
 .headerSize {
   width: 100% !important;
   height: 11rem !important;
