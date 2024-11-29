@@ -34,7 +34,7 @@
 
 #input::placeholder {
   color: var(--text-color-main);
-  font-size: 0.95rem;
+  font-size: 0.75rem;
 }
 
 .after-item::after{
@@ -55,8 +55,29 @@
   box-shadow: 0 2px 5px #1e36bd30 , 0 2px 5px #1e36bd30 , 0 2px 5px #1e36bd30;
 }
 
+.w-navbar-item {
+  width: 50% !important;
+}
+
+@media only screen and (min-width: 1280px) {
+  .w-navbar-item {
+    width: 70% !important;
+  }
+  #input::placeholder {
+    color: var(--text-color-main);
+    font-size: 0.75rem;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
   .container {
     max-width: 1500px !important;
+  }
+  .w-navbar-item {
+    width: 50% !important;
+  }
+  #input::placeholder {
+    color: var(--text-color-main);
+    font-size: 0.85rem;
   }
 }
