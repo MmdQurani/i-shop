@@ -1,0 +1,17 @@
+.offcanvas-body {  
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+.offcanvas-header {
+  display: inline !important;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.offcanvas {
+  width: 90% !important;
+  overflow-y: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
