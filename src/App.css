@@ -1,6 +1,23 @@
-#root{
+:root{
   --bg-main: #FFFFFF;
   --bg-btn: #F04055;
   --text-color-main: #00144a;
   --text-hover: #f3273f;
+}
+
+.bg-main {
+  background-color: var(--bg-main) !important;
+}
+
+.bg-btn {
+  background-color: var(--bg-btn) !important;
+  color: var(--bg-main) !important;
+}
+
+.text-color-main {
+  color: var(--text-color-main) !important;
+}
+
+.text-color-two {
+  color: var(--text-hover) !important;
 }

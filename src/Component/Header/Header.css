@@ -9,19 +9,6 @@
   height: max-content !important;
 }
 
-.bg-main {
-  background-color: var(--bg-main) !important;
-}
-
-.bg-btn {
-  background-color: var(--bg-btn) !important;
-  color: var(--bg-main) !important;
-}
-
-.text-color-main {
-  color: var(--text-color-main) !important;
-}
-
 .left-box-topbar {
   width: max-content !important;
   height: 100% !important;
