@@ -2,7 +2,7 @@ import React from 'react'
 
 function NotPage() {
   return (
-    <div>NotPage</div>
+    <main>NotPage</main>
   )
 }
 

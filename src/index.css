@@ -11,3 +11,11 @@
 body {
   font-family: Dirooz !important;
 }
+
+#root{
+  overflow-y: scroll;
+}
+
+main{
+  margin-top: 12rem;
+}

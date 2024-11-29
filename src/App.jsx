@@ -4,6 +4,7 @@ import RoutesValue from './Routes'
 import Header from './Component/Header/Header'
 import Footer from './Component/Footer/Footer'
 import './App.css'
+import { Container } from 'react-bootstrap'
 
 function App() {
   const setRoutes = useRoutes(RoutesValue);
@@ -11,7 +12,9 @@ function App() {
   return (
     <>
     <Header></Header>
+    <Container>
     {setRoutes}
+    </Container>
     <Footer></Footer>
     </>
   )
