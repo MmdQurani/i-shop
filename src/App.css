@@ -1,5 +1,6 @@
 :root{
   --bg-main: #FFFFFF;
+  --bg-offcanvas: #fffffff8;
   --bg-btn: #F04055;
   --text-color-main: #00144a;
   --text-hover: #f3273f;
@@ -20,4 +21,8 @@
 
 .text-color-two {
   color: var(--text-hover) !important;
+}
+
+.bg-offcanvas {
+  background-color: var(--bg-offcanvas) !important;
 }

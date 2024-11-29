@@ -27,7 +27,7 @@ function Topbar() {
                 <IoMenu fontSize={32} color='#00144a' />
               </button>
 
-              <Offcanvas show={show} onHide={handleClose} placement="end" >
+              <Offcanvas className='bg-offcanvas' show={show} onHide={handleClose} placement="end" >
                 <Offcanvas.Header closeButton />
                 <Offcanvas.Body>
                   <ul className='m-0 p-0 d-flex flex-row justify-content-between'>
