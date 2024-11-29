@@ -28,8 +28,9 @@
 }
 
 .right-box-topbar {
-  width: 45%;
+  width: 100%;
   height: 100%;
+  padding-right: 1rem;
 }
 
 #input::placeholder {
@@ -55,26 +56,101 @@
   box-shadow: 0 2px 5px #1e36bd30 , 0 2px 5px #1e36bd30 , 0 2px 5px #1e36bd30;
 }
 
-.w-navbar-item {
-  width: 50% !important;
+.d_flex_lg {
+  display: none !important;
+}
+.d_flex_sm {
+  display: flex !important;
+}
+.d_inline_lg {
+  display: none !important;
+}
+.px_lg {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+.me_lg {
+  margin: 0 !important;
+}
+.w_lg {
+  width: 25% !important;
+}
+
+@media only screen and (min-width: 335px) {
+  .d_flex_lg {
+    display: none !important;
+  }
+  .d_flex_sm {
+    display: flex !important;
+  }
+  .d_inline_lg {
+    display: none !important;
+  }
+  .px_lg {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .me_lg {
+    margin: 0 !important;
+  }
+  .w_lg {
+    width: 25% !important;
+  }
+  .right-box-topbar {
+    width: 100%;
+    height: 100%;
+    padding-right: 1rem;
+  }
+  .d_btn_canvas{
+    display: flex !important;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
   .w-navbar-item {
-    width: 70% !important;
+    width: 65% !important;
   }
   #input::placeholder {
     color: var(--text-color-main);
     font-size: 0.75rem;
   }
+  .d-topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .d_flex_lg {
+    display: flex !important;
+  }
+  .d_flex_sm {
+    display: none !important;
+  }
+  .d_inline_lg {
+    display: inline !important;
+  }
+  .px_lg {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  .me_lg {
+    margin-right: 1rem !important;
+  }
+  .w_lg {
+    width: 100% !important;
+  }
+  .right-box-topbar {
+    width: 45%;
+    height: 100%;
+    padding-right: 0;
+  }
+  .d_btn_canvas{
+    display: none !important;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
-  .container {
-    max-width: 1500px !important;
-  }
   .w-navbar-item {
-    width: 50% !important;
+    width: 55% !important;
   }
   #input::placeholder {
     color: var(--text-color-main);
