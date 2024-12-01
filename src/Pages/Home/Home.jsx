@@ -3,7 +3,7 @@ import Story from '../../Component/Storys/Storys'
 
 function Home() {
   return (
-    <main className='bg-danger'>
+    <main className=''>
       <Story />
     </main>
   )
