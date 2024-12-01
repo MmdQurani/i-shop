@@ -42,7 +42,7 @@ function Topbar() {
                   <ul className='m-0 p-0 d-flex flex-column row-gap-3'>
                     <li className='list-group-item pb-4 d-flex flex-column row-gap-3'>
                     <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>صفحه اصلی</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>مشخصات قالب</Link>
+                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>صفحات قالب</Link>
                     <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>فروشگاه</Link>
                     <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>سوالات متداول</Link>
                     <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>شگفت انگیزشو</Link>

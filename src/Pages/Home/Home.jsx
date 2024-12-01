@@ -1,8 +1,11 @@
 import React from 'react'
+import Story from '../../Component/Storys/Storys'
 
 function Home() {
   return (
-    <main className='bg-danger'>Home</main>
+    <main className='bg-danger'>
+      <Story />
+    </main>
   )
 }
 
