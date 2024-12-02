@@ -1,4 +1,4 @@
-import React , {useState , useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
@@ -7,13 +7,25 @@ import { Link } from 'react-router-dom';
 
 function TrendSlider() {
 
-  const [trendSrc , setTrendSrc] = useState('./public/assets/img/Trend/newSlider3-1.jpg');
+  const [trendSrc, setTrendSrc] = useState([]);
 
   const resizeHandler = () => {
-    if(window.innerWidth < 990) {
-      setTrendSrc('./public/assets/img/Trend/mob4-1.jpg');
-    }else {
-      setTrendSrc('./public/assets/img/Trend/newSlider3-1.jpg');
+    if (window.innerWidth < 990) {
+      setTrendSrc(
+        [
+          { id : 1 , src: './public/assets/img/Trend/mob4-1.jpg' },
+          { id : 2 , src: './public/assets/img/Trend/newSlider3-1.jpg' },
+          { id : 3 , src: './public/assets/img/Trend/mob4-1.jpg' }
+        ]
+      );
+    } else {
+      setTrendSrc(
+        [
+          { id : 1 , src: './public/assets/img/Trend/newSlider2-1.jpg' },
+          { id : 2 , src: './public/assets/img/Trend/newSlider3-1.jpg' },
+          { id : 3 , src: './public/assets/img/Trend/newSlider4-1.jpg' }
+        ]
+      );
     }
   }
 
@@ -22,14 +34,13 @@ function TrendSlider() {
     resizeHandler()
 
     window.addEventListener('resize' , resizeHandler);
-  })
+  } , [])
 
   return (
     <>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={0}
-        // slidesPerView={8}
         navigation
         loop={false}
         slidesPerView={1}
@@ -39,21 +50,13 @@ function TrendSlider() {
         className='py-3'
       >
 
-        <SwiperSlide style={{ height: '100%' }} >
-          <Link to='/shop'>
-            <img className='trend-img-st' src={trendSrc} alt="" />
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link to='/shop'>
-            <img className='trend-img-st' src={trendSrc} alt="" />
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Link to='/shop'>
-            <img className='trend-img-st' src={trendSrc} alt="" />
-          </Link>
-        </SwiperSlide>
+        {trendSrc.map(item =>
+          <SwiperSlide key={item.id} >
+            <Link to='/shop'>
+              <img className='trend-img-st' src={item.src} alt="" />
+            </Link>
+          </SwiperSlide>
+        )}
 
       </Swiper>
     </>
