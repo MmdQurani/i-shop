@@ -10,20 +10,20 @@ function TrendSlider() {
   const [trendSrc, setTrendSrc] = useState([]);
 
   const resizeHandler = () => {
-    if (window.innerWidth < 990) {
+    if (window.innerWidth < 992) {
       setTrendSrc(
         [
-          { id : 1 , src: './public/assets/img/Trend/mob4-1.jpg' },
-          { id : 2 , src: './public/assets/img/Trend/newSlider3-1.jpg' },
-          { id : 3 , src: './public/assets/img/Trend/mob4-1.jpg' }
+          { id: 1, src: './public/assets/img/Trend/mob4-1.jpg' },
+          { id: 2, src: './public/assets/img/Trend/newSlider3-1.jpg' },
+          { id: 3, src: './public/assets/img/Trend/mob4-1.jpg' }
         ]
       );
     } else {
       setTrendSrc(
         [
-          { id : 1 , src: './public/assets/img/Trend/newSlider2-1.jpg' },
-          { id : 2 , src: './public/assets/img/Trend/newSlider3-1.jpg' },
-          { id : 3 , src: './public/assets/img/Trend/newSlider4-1.jpg' }
+          { id: 1, src: './public/assets/img/Trend/newSlider2-1.jpg' },
+          { id: 2, src: './public/assets/img/Trend/newSlider3-1.jpg' },
+          { id: 3, src: './public/assets/img/Trend/newSlider4-1.jpg' }
         ]
       );
     }
@@ -33,32 +33,48 @@ function TrendSlider() {
 
     resizeHandler()
 
-    window.addEventListener('resize' , resizeHandler);
-  } , [])
+    window.addEventListener('resize', resizeHandler);
+  }, [])
 
   return (
     <>
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={0}
-        navigation
-        loop={false}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        style={{ height: 'max-content' }}
-        className='py-3'
-      >
 
-        {trendSrc.map(item =>
-          <SwiperSlide key={item.id} >
-            <Link to='/shop'>
-              <img className='trend-img-st' src={item.src} alt="" />
-            </Link>
-          </SwiperSlide>
-        )}
+      <div className='row'>
 
-      </Swiper>
+        <div className='col-12'>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            spaceBetween={0}
+            navigation
+            loop={false}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            style={{ height: 'max-content' }}
+            className='py-3'
+          >
+
+            {trendSrc.map(item =>
+              <SwiperSlide key={item.id} >
+                <Link to='/shop'>
+                  <img className='trend-img-st' src={item.src} alt="" />
+                </Link>
+              </SwiperSlide>
+            )}
+
+          </Swiper>
+        </div>
+
+        <div className="col-12 d-flex justify-content-center">
+
+          <div className="row w-100" dir='rtl'>
+            <div className="col-12 col-lg-5 bg-danger">hello world</div>
+            <div className="col-12 col-lg-7 bg-warning">hello world</div>
+          </div>
+
+        </div>
+
+      </div>
     </>
   )
 }
