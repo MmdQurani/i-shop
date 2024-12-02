@@ -46,7 +46,7 @@ function TrendSlider() {
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={0}
             navigation
-            loop={false}
+            loop={true}
             slidesPerView={1}
             pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
