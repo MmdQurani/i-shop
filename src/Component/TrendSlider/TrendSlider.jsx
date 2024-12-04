@@ -4,10 +4,16 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/css';
 import './TrendSlider.css'
 import { Link } from 'react-router-dom';
+import TrendCard from './TrendCard/TrendCard';
 
 function TrendSlider() {
 
   const [trendSrc, setTrendSrc] = useState([]);
+  const [imgTrendCard , setImgTrendCard] = useState([
+    {src : './public/assets/img/TrendCard/cat3-1.jpg'},
+    {src : './public/assets/img/TrendCard/cat6-1.jpg'},
+    {src : './public/assets/img/TrendCard/headphone-1.jpg'},
+  ])
 
   const resizeHandler = () => {
     if (window.innerWidth < 992) {
@@ -69,7 +75,13 @@ function TrendSlider() {
 
           <div className="row w-100" dir='rtl'>
             <div className="col-12 col-lg-5 bg-danger">hello world</div>
-            <div className="col-12 col-lg-7 bg-warning">hello world</div>
+            <div className="col-12 col-lg-7">
+              <div className='d-flex justify-content-between align-items-center flex-row'>
+                {imgTrendCard.map(item => 
+                  <TrendCard imgLink={item} />
+                )}
+              </div>
+            </div>
           </div>
 
         </div>
