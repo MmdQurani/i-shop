@@ -35,6 +35,9 @@ function Storys() {
           1400: {
             slidesPerView: 12, // سه اسلاید برای صفحه نمایش بزرگ  
           },
+          1600: {
+            slidesPerView: 14, // سه اسلاید برای صفحه نمایش بزرگ  
+          },
         }}
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
