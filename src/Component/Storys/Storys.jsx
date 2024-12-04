@@ -1,14 +1,45 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 import './Storys.css'
 import 'swiper/css';
 
 function Storys() {
+
+  const [imgUrl, setImgUrl] = useState(
+    [
+      {id:1 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:2 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:3 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:4 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:5 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:6 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:7 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:8 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:9 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:10 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:11 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:12 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:13 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:14 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:15 , src: './public/assets/img/Storys/story-01.jpg' },
+      {id:16, src: './public/assets/img/Storys/story-01.jpg' },
+      {id:17 , src: './public/assets/img/Storys/story-01.jpg' },
+    ]
+  )
+
+  useEffect(() => {
+
+  }, [])
+
   return (
     <>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+        autoplay={{
+          delay: 4500, // فاصله بین اسلایدها به میلی‌ثانیه  
+          disableOnInteraction: false, // متوقف نشود با تعاملات کاربر  
+        }}
         spaceBetween={0}
         // slidesPerView={8}
         navigation
@@ -42,103 +73,15 @@ function Storys() {
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
       >
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
 
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
-        <SwiperSlide className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
-          <button className='parent-profile-story'>
-            <img src="./public/assets/img/Storys/story-01.jpg" className='profile-story' alt="" />
-          </button>
-          <span>hello</span>
-        </SwiperSlide>
+        {imgUrl.map(item =>
+          <SwiperSlide key={item.id} className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
+            <button className='parent-profile-story'>
+              <img src={`${item.src}`} className='profile-story' alt="" />
+            </button>
+            <span>hello</span>
+          </SwiperSlide>
+        )}
 
       </Swiper>
     </>
