@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import './TrendSlider.css'
 import { Link } from 'react-router-dom';
@@ -9,10 +9,10 @@ import TrendCard from './TrendCard/TrendCard';
 function TrendSlider() {
 
   const [trendSrc, setTrendSrc] = useState([]);
-  const [imgTrendCard , setImgTrendCard] = useState([
-    {src : './public/assets/img/TrendCard/cat3-1.jpg'},
-    {src : './public/assets/img/TrendCard/cat6-1.jpg'},
-    {src : './public/assets/img/TrendCard/headphone-1.jpg'},
+  const [imgTrendCard, setImgTrendCard] = useState([
+    {id : 1 , src: './public/assets/img/TrendCard/cat3-1.jpg' },
+    {id : 2 , src: './public/assets/img/TrendCard/cat6-1.jpg' },
+    {id : 3 , src: './public/assets/img/TrendCard/headphone-1.jpg' },
   ])
 
   const resizeHandler = () => {
@@ -49,9 +49,13 @@ function TrendSlider() {
 
         <div className='col-12'>
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, Autoplay ]}
+            navigation={true}
+            autoplay={{
+              delay: 4500, // فاصله بین اسلایدها به میلی‌ثانیه  
+              disableOnInteraction: false, // متوقف نشود با تعاملات کاربر  
+            }}
             spaceBetween={0}
-            navigation
             loop={true}
             slidesPerView={1}
             pagination={{ clickable: true }}
@@ -77,8 +81,8 @@ function TrendSlider() {
             <div className="col-12 col-lg-5 bg-danger">hello world</div>
             <div className="col-12 col-lg-7">
               <div className='d-flex justify-content-between align-items-center flex-row'>
-                {imgTrendCard.map(item => 
-                  <TrendCard imgLink={item} />
+                {imgTrendCard.map(item =>
+                  <TrendCard key={item.id} imgLink={item} />
                 )}
               </div>
             </div>
