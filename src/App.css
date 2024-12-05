@@ -2,7 +2,9 @@
   --bg-main: #FFFFFF;
   --bg-offcanvas: #fffffff8;
   --bg-btn: #F04055;
+  --bg-head-section: #1e36bd30;
   --text-color-main: #00144a;
+  --subtext-color-main: #00144a;
   --text-hover: #f3273f;
 }
 
@@ -17,6 +19,9 @@
 
 .text-color-main {
   color: var(--text-color-main) !important;
+}
+.sub-text-color-main {
+  color: var(--subtext-color-main) !important;
 }
 
 .text-color-two {
