@@ -1,14 +1,14 @@
 import React from 'react'
 import Story from '../../Component/Storys/Storys'
 import TrendSlider from '../../Component/TrendSlider/TrendSlider'
-import HeadSection from '../../Component/HeadSection/HeadSection'
+import PopularCategories from '../../Component/PopularCategories/PopularCategories'
 
 function Home() {
   return (
     <main className=''>
       <Story />
       <TrendSlider />
-      <HeadSection moreItems={null} title={`دسته بندی های محبوب`} />
+      <PopularCategories />
     </main>
   )
 }
