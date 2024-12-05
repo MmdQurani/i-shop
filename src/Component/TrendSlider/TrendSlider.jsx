@@ -20,8 +20,6 @@ function TrendSlider() {
     if (window.innerWidth < 992) {
       setTrendSrc(
         [
-          { id: 1, src: './public/assets/img/Trend/mob2-1.jpg' },
-          { id: 2, src: './public/assets/img/Trend/mob3-1.jpg' },
           { id: 2, src: './public/assets/img/Trend/mob4-1.jpg' },
           { id: 3, src: './public/assets/img/Trend/mob5-1.jpg' }
         ]
@@ -31,8 +29,6 @@ function TrendSlider() {
         [
           { id: 1, src: './public/assets/img/Trend/newSlider2-1.jpg' },
           { id: 2, src: './public/assets/img/Trend/newSlider3-1.jpg' },
-          { id: 2, src: './public/assets/img/Trend/newSlider4-1.jpg' },
-          { id: 3, src: './public/assets/img/Trend/newSlider5-1.jpg' }
         ]
       );
     }
@@ -78,7 +74,7 @@ function TrendSlider() {
           </Swiper>
         </div>
 
-        <div className="col-12 d-flex justify-content-center">
+        <div className="col-12 d-flex justify-content-center p-0">
 
           <div className="row w-100" dir='rtl'>
 

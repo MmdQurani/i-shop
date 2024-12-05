@@ -30,19 +30,14 @@ function TrendCardSlider() {
         }}
         dir='ltr'
       >
-        <SwiperSlide className='bg-warning border-parent-trend-card-slider'>
+        <SwiperSlide className='border-parent-trend-card-slider'>
           <Link to='/'>
             <img src="./public/assets/img/Trend/mob2-1.jpg" className='img-trend-card-slider' alt="" />
           </Link>
         </SwiperSlide>
-        <SwiperSlide className='bg-warning border-parent-trend-card-slider'>
+        <SwiperSlide className='border-parent-trend-card-slider'>
           <Link to='/'>
             <img src="./public/assets/img/Trend/mob3-1.jpg" className='img-trend-card-slider' alt="" />
-          </Link>
-        </SwiperSlide>
-        <SwiperSlide className='bg-warning border-parent-trend-card-slider'>
-          <Link to='/'>
-            <img src="./public/assets/img/Trend/mob5-1.jpg" className='img-trend-card-slider' alt="" />
           </Link>
         </SwiperSlide>
       </Swiper>
