@@ -8,7 +8,7 @@ function Home() {
     <main className=''>
       <Story />
       <TrendSlider />
-      <HeadSection />
+      <HeadSection moreItems={null} title={`دسته بندی های محبوب`} />
     </main>
   )
 }

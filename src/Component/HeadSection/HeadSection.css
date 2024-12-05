@@ -20,6 +20,7 @@
 
 .icon-head-section {
   color: #353fff30 !important;
+  transition: 100ms;
 }
 .head-section-left:hover>.icon-head-section {
   color: #1c23b18f !important;
