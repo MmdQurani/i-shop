@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
+import { Scrollbar, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import './TrendSlider.css'
 import { Link } from 'react-router-dom';
 import TrendCard from './TrendCard/TrendCard';
+import TrendCardSlider from './TrendCardSlider/TrendCardSlider';
 
 function TrendSlider() {
 
@@ -19,9 +20,10 @@ function TrendSlider() {
     if (window.innerWidth < 992) {
       setTrendSrc(
         [
-          { id: 1, src: './public/assets/img/Trend/mob4-1.jpg' },
-          { id: 2, src: './public/assets/img/Trend/newSlider3-1.jpg' },
-          { id: 3, src: './public/assets/img/Trend/mob4-1.jpg' }
+          { id: 1, src: './public/assets/img/Trend/mob2-1.jpg' },
+          { id: 2, src: './public/assets/img/Trend/mob3-1.jpg' },
+          { id: 2, src: './public/assets/img/Trend/mob4-1.jpg' },
+          { id: 3, src: './public/assets/img/Trend/mob5-1.jpg' }
         ]
       );
     } else {
@@ -29,7 +31,8 @@ function TrendSlider() {
         [
           { id: 1, src: './public/assets/img/Trend/newSlider2-1.jpg' },
           { id: 2, src: './public/assets/img/Trend/newSlider3-1.jpg' },
-          { id: 3, src: './public/assets/img/Trend/newSlider4-1.jpg' }
+          { id: 2, src: './public/assets/img/Trend/newSlider4-1.jpg' },
+          { id: 3, src: './public/assets/img/Trend/newSlider5-1.jpg' }
         ]
       );
     }
@@ -49,7 +52,7 @@ function TrendSlider() {
 
         <div className='col-12'>
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, Autoplay ]}
+            modules={[Scrollbar, Autoplay ]}
             navigation={true}
             autoplay={{
               delay: 4500, // فاصله بین اسلایدها به میلی‌ثانیه  
@@ -78,7 +81,13 @@ function TrendSlider() {
         <div className="col-12 d-flex justify-content-center">
 
           <div className="row w-100" dir='rtl'>
-            <div className="col-12 col-lg-5 bg-danger">hello world</div>
+
+            <div className="col-12 col-lg-5 trend-card-slider-box-st" style={{overflow:'hidden'}}>
+              <div className='h-trend-card-slider-box' style={{width:'100%'}}>
+                <TrendCardSlider />
+              </div>
+            </div>
+
             <div className="col-12 col-lg-7">
               <div className='d-flex justify-content-between align-items-center flex-row'>
                 {imgTrendCard.map(item =>
@@ -86,6 +95,7 @@ function TrendSlider() {
                 )}
               </div>
             </div>
+
           </div>
 
         </div>
