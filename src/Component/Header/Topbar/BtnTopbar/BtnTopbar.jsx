@@ -9,7 +9,7 @@ function BtnTopbar(prop) {
         <Link to='/'>
           <button style={{ boxShadow: '-2px 2px 5px #f0405588' }} className='btn bg-btn px_lg py-2 rounded-3 fs-6'><span>سبد خرید</span> <span>0</span></button>
         </Link>
-        <Link to='/'>
+        <Link to='/login'>
           <button style={{ boxShadow: '-2px 2px 5px #0000001f' }} className='btn bg-main text-color-main px_lg py-2 rounded-3'>
             <span className='fs-6'>
               <span className='d_inline_lg'>ورود / ثبت نام</span>
