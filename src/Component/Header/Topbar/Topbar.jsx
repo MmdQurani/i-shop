@@ -35,7 +35,7 @@ function Topbar() {
                       <span className='fs-4 text-color-two'>شگفت انگیزشو</span>
                     </li>
                     <li className='list-group-item'>
-                      <img src="./public/assets/img/Logo/logo1.jpg" width={150} alt="" />
+                      <img src="assets/img/Logo/logo1.jpg" width={150} alt="" />
                     </li>
                   </ul>
                   <SearchBox/>

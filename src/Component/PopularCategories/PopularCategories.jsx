@@ -42,7 +42,7 @@ function PopularCategories() {
           >
 
             <SwiperSlide className='bg-warning h-100'>
-              <img src="./public/assets/img/Trend/mob4-1.jpg" style={{objectFit:'cover' , width:'100%'}} alt="" />
+              <img src="assets/img/Trend/mob4-1.jpg" style={{objectFit:'cover' , width:'100%'}} alt="" />
             </SwiperSlide>
             <SwiperSlide className='bg-warning rounded-3 h-100'>slide 2</SwiperSlide>
             <SwiperSlide className='bg-warning rounded-3 h-100'>slide 3</SwiperSlide>

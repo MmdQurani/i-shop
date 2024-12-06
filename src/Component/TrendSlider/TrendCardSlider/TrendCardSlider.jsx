@@ -32,12 +32,12 @@ function TrendCardSlider() {
       >
         <SwiperSlide className='border-parent-trend-card-slider'>
           <Link to='/'>
-            <img src="./public/assets/img/Trend/mob2-1.jpg" className='img-trend-card-slider' alt="" />
+            <img src="assets/img/Trend/mob2-1.jpg" className='img-trend-card-slider' alt="" />
           </Link>
         </SwiperSlide>
         <SwiperSlide className='border-parent-trend-card-slider'>
           <Link to='/'>
-            <img src="./public/assets/img/Trend/mob3-1.jpg" className='img-trend-card-slider' alt="" />
+            <img src="assets/img/Trend/mob3-1.jpg" className='img-trend-card-slider' alt="" />
           </Link>
         </SwiperSlide>
       </Swiper>

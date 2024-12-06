@@ -11,24 +11,24 @@ function TrendSlider() {
 
   const [trendSrc, setTrendSrc] = useState([]);
   const [imgTrendCard, setImgTrendCard] = useState([
-    {id : 1 , src: './public/assets/img/TrendCard/cat3-1.jpg' },
-    {id : 2 , src: './public/assets/img/TrendCard/cat6-1.jpg' },
-    {id : 3 , src: './public/assets/img/TrendCard/headphone-1.jpg' },
+    {id : 1 , src: 'assets/img/TrendCard/cat3-1.jpg' },
+    {id : 2 , src: 'assets/img/TrendCard/cat6-1.jpg' },
+    {id : 3 , src: 'assets/img/TrendCard/headphone-1.jpg' },
   ])
 
   const resizeHandler = () => {
     if (window.innerWidth < 992) {
       setTrendSrc(
         [
-          { id: 2, src: './public/assets/img/Trend/mob4-1.jpg' },
-          { id: 3, src: './public/assets/img/Trend/mob5-1.jpg' }
+          { id: 2, src: 'assets/img/Trend/mob4-1.jpg' },
+          { id: 3, src: 'assets/img/Trend/mob5-1.jpg' }
         ]
       );
     } else {
       setTrendSrc(
         [
-          { id: 1, src: './public/assets/img/Trend/newSlider2-1.jpg' },
-          { id: 2, src: './public/assets/img/Trend/newSlider3-1.jpg' },
+          { id: 1, src: 'assets/img/Trend/newSlider2-1.jpg' },
+          { id: 2, src: 'assets/img/Trend/newSlider3-1.jpg' },
         ]
       );
     }
