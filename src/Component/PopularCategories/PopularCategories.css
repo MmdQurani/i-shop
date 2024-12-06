@@ -1,0 +1,21 @@
+.parent-swiper-box {
+  height: max-content;
+  position: relative;
+}
+
+.navigation-btn-st{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: green; */
+  bottom: 0;
+}
+
+.mx-swiper-box {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.swiper-next-button , .swiper-prev-button {
+  border-radius: 0.5rem;
+}
