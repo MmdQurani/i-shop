@@ -4,7 +4,7 @@ import HeadSection from '../HeadSection/HeadSection'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
-import { FaChevronRight , FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
 function PopularCategories() {
   return (
@@ -17,8 +17,8 @@ function PopularCategories() {
             slidesPerView={9}
             modules={[Navigation]}
             navigation={{
-              nextEl:'.swiper-next-button',
-              prevEl:'.swiper-prev-button'
+              nextEl: '.swiper-next-button',
+              prevEl: '.swiper-prev-button'
             }}
             spaceBetween={15}
             breakpoints={{
@@ -38,11 +38,13 @@ function PopularCategories() {
                 slidesPerView: 9, // سه اسلاید برای صفحه نمایش بزرگ  
               }
             }}
-            style={{height:'10rem' , overflow:'hidden'}}
+            style={{ height: '10rem', overflow: 'hidden' }}
           >
 
             <SwiperSlide className='bg-warning h-100'>
-              <img src="assets/img/Trend/mob4-1.jpg" style={{objectFit:'cover' , width:'100%'}} alt="" />
+              <div className='w-100 h-100 bg-danger'>
+                <img src="assets/img/Trend/mob4-1.jpg" style={{ objectFit: 'cover', width: '100%' }} alt="" />
+              </div>
             </SwiperSlide>
             <SwiperSlide className='bg-warning rounded-3 h-100'>slide 2</SwiperSlide>
             <SwiperSlide className='bg-warning rounded-3 h-100'>slide 3</SwiperSlide>

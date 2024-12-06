@@ -36,11 +36,19 @@
   background-color: #F6F7FC !important;
 }
 
+.swiper-next-button.swiper-button-disabled {
+  background-color: #F6F7FC !important;
+}
+
 .icon-swiper {
   color: #0f499f !important;
 }
 
 .swiper-prev-button.swiper-button-disabled>.icon-swiper {
+  color: #BFC4D4 !important;
+}
+
+.swiper-next-button.swiper-button-disabled>.icon-swiper {
   color: #BFC4D4 !important;
 }
 
