@@ -25,3 +25,9 @@
 .head-section-left:hover>.icon-head-section {
   color: #1c23b18f !important;
 }
+
+@media only screen and (max-width: 450px){
+  .fs-HeadSection{
+    font-size: 0.8rem !important;
+  }
+}

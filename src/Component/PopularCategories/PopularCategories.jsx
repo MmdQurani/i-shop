@@ -22,13 +22,13 @@ function PopularCategories() {
             }}
             spaceBetween={15}
             breakpoints={{
-              320: {
-                slidesPerView: 1, // یک اسلاید برای صفحه نمایش کوچک  
+              100: {
+                slidesPerView: 2, // یک اسلاید برای صفحه نمایش کوچک  
               },
               410: {
                 slidesPerView: 2, // یک اسلاید برای صفحه نمایش کوچک  
               },
-              768: {
+              550: {
                 slidesPerView: 3, // یک اسلاید برای صفحه نمایش کوچک  
               },
               992: {
@@ -57,7 +57,7 @@ function PopularCategories() {
             <SwiperSlide className='bg-warning rounded-3 h-100'>slide 12</SwiperSlide>
           </Swiper>
         </div>
-        <div dir='rtl' className='navigation-btn-st d-flex flex-row justify-content-between'>
+        <div dir='rtl' className='navigation-btn-st d-md-flex d-none flex-row justify-content-between'>
           <button className='swiper-next-button'>
             <FaChevronRight className='icon-swiper' />
           </button>

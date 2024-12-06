@@ -43,3 +43,10 @@
 .swiper-prev-button.swiper-button-disabled>.icon-swiper {
   color: #BFC4D4 !important;
 }
+
+@media only screen and (max-width: 767px) {
+  .mx-swiper-box {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+}
