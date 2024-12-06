@@ -6,6 +6,7 @@ import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import NavigationBtnCard from '../NavigationBtnCard/NavigationBtnCard';
 
 function ProductSliderMain() {
   return (
@@ -174,14 +175,9 @@ function ProductSliderMain() {
 
           </Swiper>
         </div>
-        <div dir='rtl' className='navigation-btn-st d-md-flex d-none flex-row justify-content-between'>
-          <button className='swiper-next-button'>
-            <FaChevronRight className='icon-swiper' />
-          </button>
-          <button className='swiper-prev-button'>
-            <FaChevronLeft className='icon-swiper' />
-          </button>
-        </div>
+
+        <NavigationBtnCard />
+        
       </div>
     </div>
   )
