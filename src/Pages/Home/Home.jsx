@@ -1,14 +1,14 @@
 import React from 'react'
 import Story from '../../Component/Storys/Storys'
 import TrendSlider from '../../Component/TrendSlider/TrendSlider'
-import ProductSliderMain from '../../Component/ProductSliderMain/ProductSliderMain'
+import PopularCategories from '../../Component/PopularCategories/PopularCategories'
 
 function Home() {
   return (
     <main className=''>
       <Story />
       <TrendSlider />
-      <ProductSliderMain />
+      <PopularCategories />
     </main>
   )
 }
