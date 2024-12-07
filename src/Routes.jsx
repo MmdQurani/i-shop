@@ -8,7 +8,7 @@ import Blog from "./Pages/Blog/Blog";
 import Faqs from "./Pages/Faqs/Faqs";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import AboutUs from "./Pages/AboutUs/AboutUs";
-import Carts from "./Pages/Carts/Carts";
+import Cards from "./Pages/Cards/Cards";
 import Login from "./Pages/Login/Login";
 import NotPage from "./Pages/NotPage/NotPage";
 
@@ -23,7 +23,7 @@ const RoutesValue = [
   {path : '/faqs' , element : <Faqs></Faqs>},
   {path : '/contact-us' , element : <ContactUs></ContactUs>},
   {path : '/about-us' , element : <AboutUs></AboutUs>},
-  {path : '/carts' , element : <Carts></Carts>},
+  {path : '/cards' , element : <Cards></Cards>},
   {path : '/login' , element : <Login></Login>},
   {path : '*' , element : <NotPage></NotPage>}
 ];
