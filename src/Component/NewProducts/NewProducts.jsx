@@ -4,8 +4,10 @@ import NavigationBtnCard from '../NavigationBtnCard/NavigationBtnCard'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Link } from 'react-router-dom'
 import { Navigation } from 'swiper/modules';
-import { Card , Button } from 'react-bootstrap'
+import { Card, Button } from 'react-bootstrap'
+import './NewProducts.css'
 import 'swiper/css';
+import BoxCards from '../BoxCards/BoxCards'
 
 function NewProducts() {
   return (
@@ -50,94 +52,25 @@ function NewProducts() {
             className='px-2'
           >
 
-            <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
-              <Link to='/' className='text-decoration-none'>
+            <SwiperSlide className=' my-auto d-flex align-items-center'>
+              <BoxCards src='./assets/img/Trend/mob2-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
 
-                <Card style={{ width: '100%' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-
-              </Link>
             </SwiperSlide>
+            <SwiperSlide className=' my-auto d-flex align-items-center'>
+              <BoxCards src='./assets/img/Trend/mob5-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
 
-            <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
-              <Link to='/' className='text-decoration-none'>
-
-                <Card style={{ width: '100%' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-
-              </Link>
             </SwiperSlide>
+            <SwiperSlide className=' my-auto d-flex align-items-center'>
+              <BoxCards src='./assets/img/Trend/mob3-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
 
-            <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
-              <Link to='/' className='text-decoration-none'>
-
-                <Card style={{ width: '100%' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-
-              </Link>
             </SwiperSlide>
+            <SwiperSlide className=' my-auto d-flex align-items-center'>
+              <BoxCards src='./assets/img/Trend/mob4-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
 
-            <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
-              <Link to='/' className='text-decoration-none'>
-
-                <Card style={{ width: '100%' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-
-              </Link>
             </SwiperSlide>
+            <SwiperSlide className=' my-auto d-flex align-items-center'>
+              <BoxCards src='./assets/img/Trend/mob5-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
 
-            <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
-              <Link to='/' className='text-decoration-none'>
-
-                <Card style={{ width: '100%' }}>
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the
-                      bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-
-              </Link>
             </SwiperSlide>
 
           </Swiper>
