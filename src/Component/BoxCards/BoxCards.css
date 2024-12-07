@@ -1,7 +1,26 @@
 .card-body {
-  height: 60% !important;
+  padding: 0.5rem !important;
+  height: 100% !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+.card-body>div{
+  height: 40% !important;
 }
 .card {
   border: 0 !important;
   box-shadow: 0 0 5px var(--bg-head-section);
+}
+
+.fs-price-card {
+  font-size: 1rem !important;
+}
+
+@media only screen and (max-width:390px) {
+  .fs-price-card {
+    font-size: 0.8rem !important;
+  }
 }
