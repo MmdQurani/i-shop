@@ -27,24 +27,30 @@ function NewProducts() {
             loop={true}
             breakpoints={{
               100: {
+                slidesPerView: 1, // یک اسلاید برای صفحه نمایش کوچک  
+              },
+              440: {
                 slidesPerView: 1.2, // یک اسلاید برای صفحه نمایش کوچک  
               },
-              410: {
-                slidesPerView: 1.3, // یک اسلاید برای صفحه نمایش کوچک  
-              },
-              540: {
+              520: {
                 slidesPerView: 1.5, // یک اسلاید برای صفحه نمایش کوچک  
               },
               800: {
-                slidesPerView: 2.2, // یک اسلاید برای صفحه نمایش کوچک  
+                slidesPerView: 1.8, // یک اسلاید برای صفحه نمایش کوچک  
               },
               992: {
                 slidesPerView: 2.7, // سه اسلاید برای صفحه نمایش بزرگ  
               },
               1024: {
+                slidesPerView: 2.7, // سه اسلاید برای صفحه نمایش بزرگ  
+              },
+              1200: {
                 slidesPerView: 3, // سه اسلاید برای صفحه نمایش بزرگ  
               },
               1400: {
+                slidesPerView: 3.7, // سه اسلاید برای صفحه نمایش بزرگ  
+              },
+              1700: {
                 slidesPerView: 4, // سه اسلاید برای صفحه نمایش بزرگ  
               }
             }}
@@ -53,23 +59,23 @@ function NewProducts() {
           >
 
             <SwiperSlide className=' my-auto d-flex align-items-center'>
-              <BoxCards src='./assets/img/Trend/mob2-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
+              <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000'/>
 
             </SwiperSlide>
             <SwiperSlide className=' my-auto d-flex align-items-center'>
-              <BoxCards src='./assets/img/Trend/mob5-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
+              <BoxCards src='./assets/img/Products/4-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000'/>
 
             </SwiperSlide>
             <SwiperSlide className=' my-auto d-flex align-items-center'>
-              <BoxCards src='./assets/img/Trend/mob3-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
+              <BoxCards src='./assets/img/Products/8-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000'/>
 
             </SwiperSlide>
             <SwiperSlide className=' my-auto d-flex align-items-center'>
-              <BoxCards src='./assets/img/Trend/mob4-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
+              <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000'/>
 
             </SwiperSlide>
             <SwiperSlide className=' my-auto d-flex align-items-center'>
-              <BoxCards src='./assets/img/Trend/mob5-1.jpg' title='Card Title' subTitle='Card Title Card Title Card Title' price='2,000'/>
+              <BoxCards src='./assets/img/Products/4-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000'/>
 
             </SwiperSlide>
 
