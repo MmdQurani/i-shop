@@ -1,0 +1,7 @@
+.card-body {
+  height: 60% !important;
+}
+.card {
+  border: 0 !important;
+  box-shadow: 0 0 5px var(--bg-head-section);
+}
