@@ -2,6 +2,7 @@ import React from 'react'
 import Story from '../../Component/Storys/Storys'
 import TrendSlider from '../../Component/TrendSlider/TrendSlider'
 import PopularCategories from '../../Component/PopularCategories/PopularCategories'
+import NewProducts from '../../Component/NewProducts/NewProducts'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <Story />
       <TrendSlider />
       <PopularCategories />
+      <NewProducts />
     </main>
   )
 }

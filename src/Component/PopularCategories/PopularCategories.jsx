@@ -4,7 +4,6 @@ import HeadSection from '../HeadSection/HeadSection'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
-import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import NavigationBtnCard from '../NavigationBtnCard/NavigationBtnCard';
 
