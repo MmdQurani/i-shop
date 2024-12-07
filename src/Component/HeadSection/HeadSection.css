@@ -26,8 +26,19 @@
   color: #1c23b18f !important;
 }
 
+.fs-HeadSection{
+  font-size: 1.4rem !important;
+}
+
+.fs-HeadSection-link{
+  font-size: 1rem !important;
+}
+
 @media only screen and (max-width: 450px){
   .fs-HeadSection{
+    font-size: 0.8rem !important;
+  }
+  .fs-HeadSection-link{
     font-size: 0.8rem !important;
   }
 }

@@ -10,15 +10,15 @@ import NavigationBtnCard from '../NavigationBtnCard/NavigationBtnCard';
 function ProductSliderMain() {
   return (
     <div>
-      <HeadSection moreItems={true} title={`دسته بندی های محبوب`} link='/' />
+      <HeadSection moreItems={null} title={`دسته بندی های محبوب`} link='/' />
 
       <div className='parent-swiper-box'>
         <div className='h-100 mx-swiper-box'>
           <Swiper
             modules={[Navigation]}
             navigation={{
-              nextEl: '.swiper-next-button',
-              prevEl: '.swiper-prev-button'
+              nextEl: '#ProductSliderMain-next',
+              prevEl: '#ProductSliderMain-prev'
             }}
             spaceBetween={15}
             breakpoints={{
@@ -35,7 +35,7 @@ function ProductSliderMain() {
                 slidesPerView: 6, // سه اسلاید برای صفحه نمایش بزرگ  
               },
               1400: {
-                slidesPerView: 9, // سه اسلاید برای صفحه نمایش بزرگ  
+                slidesPerView: 9.2, // سه اسلاید برای صفحه نمایش بزرگ  
               }
             }}
             style={{ height: '10rem', overflow: 'hidden' }}
@@ -175,7 +175,7 @@ function ProductSliderMain() {
           </Swiper>
         </div>
 
-        <NavigationBtnCard />
+        <NavigationBtnCard prev='ProductSliderMain-prev' next='ProductSliderMain-next' />
         
       </div>
     </div>
