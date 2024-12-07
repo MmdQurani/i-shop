@@ -5,7 +5,7 @@ import './BtnCards.css'
 function BtnCards() {
   return (
     <>
-      <Button variant="primary">Go somewhere</Button>
+      <Button className='btn bg-btn border-0 py-2 px-2 fs-btn-card'>افزودن به سبد خرید</Button>
     </>
   )
 }
