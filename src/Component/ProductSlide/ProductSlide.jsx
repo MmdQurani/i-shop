@@ -2,15 +2,12 @@ import React from 'react'
 import HeadSection from '../HeadSection/HeadSection'
 import NavigationBtnCard from '../NavigationBtnCard/NavigationBtnCard'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Link } from 'react-router-dom'
 import { Navigation } from 'swiper/modules';
-import { Card, Button } from 'react-bootstrap'
-import './NewProducts.css'
+import './ProductSlide.css'
 import 'swiper/css';
-import BoxCards from '../BoxCards/BoxCards'
 import BannerNewProduct from './BannerNewProduct/BannerNewProduct'
 
-function NewProducts(prop) {
+function ProductSlide(prop) {
   return (
 
     <>
@@ -78,4 +75,4 @@ function NewProducts(prop) {
   )
 }
 
-export default NewProducts
+export default ProductSlide
