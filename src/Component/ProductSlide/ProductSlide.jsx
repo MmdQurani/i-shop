@@ -53,7 +53,7 @@ function ProductSlide(prop) {
                   slidesPerView: 4, // سه اسلاید برای صفحه نمایش بزرگ  
                 }
               }}
-              style={{ height: '25rem', overflow: 'hidden' }}
+              style={{ height: '27rem', overflow: 'hidden' }}
               className='px-2'
             >
 

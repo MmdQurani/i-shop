@@ -1,5 +1,9 @@
 .card-body {
-  padding: 0.5rem !important;
+  /* padding: 0.5rem !important; */
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
   height: 100% !important;
   overflow: hidden !important;
   display: flex !important;
@@ -8,7 +12,7 @@
   align-items: center !important;
 }
 .card-body>div{
-  height: 40% !important;
+  height: max-content !important;
 }
 .card {
   border: 0 !important;
