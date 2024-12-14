@@ -12,7 +12,7 @@ function ProductSlide(prop) {
 
     <>
       <div>
-        <HeadSection moreItems={true} link='/' title={prop.HeadSection} />
+        <HeadSection moreItems={prop.moreItems} link='/' title={prop.HeadSection} />
 
         {prop.HeadSection == 'موبایل' || prop.HeadSection == 'لپ تاپ' ? // اسلاید اختصاصی برای محصولاتی که بنرهای ویژه داره
 

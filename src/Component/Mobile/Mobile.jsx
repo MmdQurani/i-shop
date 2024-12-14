@@ -6,7 +6,7 @@ import BoxCards from '../BoxCards/BoxCards'
 function Mobile() {
   return (
     <>
-      <ProductSlide HeadSection='موبایل' src='./assets/img/BannerNewProducts/Mobile-1.jpg'>
+      <ProductSlide HeadSection='موبایل' src='./assets/img/BannerNewProducts/Mobile-1.jpg' moreItems={true}>
 
         <SwiperSlide className=' my-auto d-flex align-items-center'>
           <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />

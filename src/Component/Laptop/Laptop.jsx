@@ -6,7 +6,7 @@ import BoxCards from '../BoxCards/BoxCards'
 function Laptop() {
   return (
     <>
-      <ProductSlide HeadSection='لپ تاپ' src='./assets/img/BannerNewProducts/cat4-1.jpg'>
+      <ProductSlide HeadSection='لپ تاپ' src='./assets/img/BannerNewProducts/cat4-1.jpg' moreItems={true}>
 
         <SwiperSlide className=' my-auto d-flex align-items-center'>
           <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
