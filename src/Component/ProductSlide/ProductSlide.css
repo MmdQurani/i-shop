@@ -1,0 +1,30 @@
+.parent-swiper-box-two {
+  height: max-content !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.box-banner-product-slide-two {
+  display: none;
+}
+
+.img-banner-product-slide-two {
+  width: -webkit-fill-available !important;
+  object-fit: cover !important;
+  border-radius: 1rem !important;
+  height: 100% !important;
+  box-shadow: 0 5px 20px var(--bg-head-section) , 0 5px 25px var(--bg-head-section);
+}
+
+@media only screen and (min-width: 1280px) {
+  .parent-swiper-box-two {
+    height: max-content !important;
+    position: relative !important;
+    width: 75% !important;
+  }
+  .box-banner-product-slide-two {
+    width:23% !important;
+    height:27rem !important;
+    display: flex;
+  }
+}
