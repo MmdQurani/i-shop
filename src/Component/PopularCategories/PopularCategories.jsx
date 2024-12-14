@@ -7,7 +7,7 @@ import { Navigation } from 'swiper/modules';
 import { Link } from 'react-router-dom';
 import NavigationBtnCard from '../NavigationBtnCard/NavigationBtnCard';
 
-function ProductSliderMain() {
+function PopularCategories() {
   return (
     <div>
       <HeadSection moreItems={null} title={`دسته بندی های محبوب`} link='/' />
@@ -182,4 +182,4 @@ function ProductSliderMain() {
   )
 }
 
-export default ProductSliderMain
+export default PopularCategories

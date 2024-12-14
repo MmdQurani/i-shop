@@ -6,7 +6,7 @@ import BoxCards from '../BoxCards/BoxCards'
 function Bestsellers() {
   return (
     <>
-      <ProductSlide HeadSection='پرفورش ترین ها'>
+      <ProductSlide HeadSection='پرفروش ترین ها'>
 
         <SwiperSlide className=' my-auto d-flex align-items-center'>
           <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
