@@ -23,8 +23,23 @@
   font-size: 1rem !important;
 }
 
+.fs-price-card.disabled {
+  color: #000b4849 !important;
+  text-decoration: line-through !important;
+}
+
 @media only screen and (max-width:390px) {
   .fs-price-card {
     font-size: 0.8rem !important;
+  }
+}
+
+.fs-btn-card {
+  font-size: 1rem !important;
+}
+
+@media only screen and (max-width:390px) {
+  .fs-btn-card {
+    font-size: 0.75rem !important;
   }
 }

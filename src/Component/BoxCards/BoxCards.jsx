@@ -2,8 +2,9 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import './BoxCards.css'
 import 'swiper/css'
-import BtnCards from '../BtnCards/BtnCards'
+// import BtnCards from '../BtnCards/BtnCards'
 import { Link } from 'react-router-dom'
+import { Button } from 'react-bootstrap'
 
 function BoxCards(prop) {
   return (
@@ -21,9 +22,7 @@ function BoxCards(prop) {
           </Link>
 
           <div className='w-100 d-flex justify-content-between align-items-center'>
-            <span className='fs-price-card text-color-main' dir='rtl'>
-              {prop.price} <span style={{ fontSize: '10px' }}>تومان</span>
-            </span>
+            <PriceCard price='55,000,000' />
 
             <BtnCards />
           </div>
@@ -31,6 +30,21 @@ function BoxCards(prop) {
         </Card.Body>
       </Card>
     </>
+  )
+}
+
+export function PriceCard(prop) {
+  
+  return (
+    <span className={`fs-price-card ${prop.dis} text-color-main`} dir='rtl'>
+      {prop.price} <span style={{ fontSize: '10px' }}>تومان</span>
+    </span>
+  )
+}
+
+export function BtnCards () {
+  return(
+    <Button className='btn bg-btn border-0 py-2 px-2 fs-btn-card'>افزودن به سبد خرید</Button>
   )
 }
 
