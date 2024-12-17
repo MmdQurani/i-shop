@@ -4,7 +4,6 @@ import './BoxCards.css'
 import 'swiper/css'
 // import BtnCards from '../BtnCards/BtnCards'
 import { Link } from 'react-router-dom'
-import { Button } from 'react-bootstrap'
 
 function BoxCards(prop) {
   return (
@@ -44,7 +43,7 @@ export function PriceCard(prop) {
 
 export function BtnCards () {
   return(
-    <Button className='btn bg-btn border-0 py-2 px-2 fs-btn-card'>افزودن به سبد خرید</Button>
+    <Link to='/shop' className='btn bg-btn border-0 py-2 px-2 fs-btn-card'>افزودن به سبد خرید</Link>
   )
 }
 
