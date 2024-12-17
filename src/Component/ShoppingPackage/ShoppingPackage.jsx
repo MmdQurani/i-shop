@@ -10,11 +10,11 @@ function ShoppingPackage() {
       <div className="row w-100 h-100" dir='rtl'>
         <div className="banner_package mt-2 col-xl-8 col-xxl-9 col-12">
           <div className='w-100 h-100 py-1'>
-            <img src="./assets/img/PackageImg/1-1.jpg" style={{ width: '100%', height: '100%', borderRadius: '1rem', objectFit: 'cover' }} alt="" />
+            <img src="./assets/img/PackageImg/1-1.jpg" className='img-banner-package' alt="" />
           </div>
         </div>
 
-        <div className="data_package mt-2 col-xl-4 col-xxl-3 col-12 px-2 pb-3 p-0 bg-main" style={{ borderRadius: '1rem', boxShadow: '0 0 8px var(--bg-head-section)' }}>
+        <div className="data_package mt-2 col-xl-4 col-xxl-3 col-12 px-2 pb-3 p-0 bg-main">
 
           <div className='w-100 h-100 p-2 d-flex flex-column align-items-center'>
 
@@ -75,7 +75,7 @@ export function SampleImgPackage() {
     <div className="col-4 col-md-2 col-xl-4 d-flex justify-content-center align-items-center p-0">
 
       <Link to='/'>
-        <div className='bg-main py-2 d-flex justify-content-center align-items-center' style={{ width: '80px', height: '80px', border: '1px solid var(--bg-head-section)', borderRadius: '0.7rem' }}>
+        <div className='sample-img-package bg-main py-2 d-flex justify-content-center align-items-center'>
           <img src="./assets/img/Products/8-150x150.png" style={{ width: '40px' }} alt="" />
         </div>
       </Link>
