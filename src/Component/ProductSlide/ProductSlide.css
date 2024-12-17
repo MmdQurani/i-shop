@@ -13,7 +13,13 @@
   object-fit: cover !important;
   border-radius: 1rem !important;
   height: 100% !important;
-  box-shadow: 0 5px 20px var(--bg-head-section) , 0 5px 25px var(--bg-head-section);
+  box-shadow: 0 5px 20px var(--bg-head-section), 0 5px 25px var(--bg-head-section);
+}
+
+.swiper-st {
+  height: 27rem;
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -22,9 +28,10 @@
     position: relative !important;
     width: 75% !important;
   }
+
   .box-banner-product-slide-two {
-    width:23% !important;
-    height:27rem !important;
+    width: 23% !important;
+    height: 27rem !important;
     display: flex;
   }
 }

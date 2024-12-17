@@ -2,14 +2,14 @@ import React from 'react'
 import HeadSection from '../HeadSection/HeadSection'
 import NavigationBtnCard from '../NavigationBtnCard/NavigationBtnCard'
 import { Swiper } from 'swiper/react'
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import './ProductSlide.css'
 import 'swiper/css';
 import BannerNewProduct from './BannerNewProduct/BannerNewProduct'
+import { Link } from 'react-router-dom';
 
 function ProductSlide(prop) {
   return (
-
     <>
       <div>
         <HeadSection moreItems={prop.moreItems} link='/' title={prop.HeadSection} />
@@ -20,10 +20,14 @@ function ProductSlide(prop) {
             <div className='parent-swiper-box-two'>
               <div className='h-100 mx-swiper-box'>
                 <Swiper
-                  modules={[Navigation]}
+                  modules={[Navigation , Autoplay]}
                   navigation={{
                     nextEl: '#NewProducts-next',
                     prevEl: '#NewProducts-prev'
+                  }}
+                  autoplay={{
+                    delay: 3500, // فاصله بین اسلایدها به میلی‌ثانیه  
+                    disableOnInteraction: false, // متوقف نشود با تعاملات کاربر  
                   }}
                   spaceBetween={20}
                   loop={true}
@@ -56,8 +60,7 @@ function ProductSlide(prop) {
                       slidesPerView: 3, // سه اسلاید برای صفحه نمایش بزرگ  
                     },
                   }}
-                  style={{ height: '27rem', overflow: 'hidden' }}
-                  className='px-2'
+                  className='px-2 swiper-st'
                 >
 
                   {prop.children}
@@ -70,7 +73,9 @@ function ProductSlide(prop) {
             </div>
 
             <div className='box-banner-product-slide-two'>
-              <img src={prop.src} className='img-banner-product-slide-two' alt="" />
+              <Link to='/'>
+                <img src={prop.src} className='img-banner-product-slide-two' alt="" />
+              </Link>
             </div>
 
           </div>
@@ -79,10 +84,14 @@ function ProductSlide(prop) {
             <div className='parent-swiper-box'>
               <div className='h-100 mx-swiper-box'>
                 <Swiper
-                  modules={[Navigation]}
+                  modules={[Navigation , Autoplay]}
                   navigation={{
                     nextEl: '#NewProducts-next',
                     prevEl: '#NewProducts-prev'
+                  }}
+                  autoplay={{
+                    delay: 4000, // فاصله بین اسلایدها به میلی‌ثانیه  
+                    disableOnInteraction: false, // متوقف نشود با تعاملات کاربر  
                   }}
                   spaceBetween={20}
                   loop={true}
@@ -115,8 +124,7 @@ function ProductSlide(prop) {
                       slidesPerView: 4, // سه اسلاید برای صفحه نمایش بزرگ  
                     }
                   }}
-                  style={{ height: '27rem', overflow: 'hidden' , borderRadius:'1rem' }}
-                  className='px-3 bg-btn'
+                  className='px-3 bg-btn swiper-st'
                 >
 
                   {prop.children}
@@ -134,10 +142,14 @@ function ProductSlide(prop) {
             <div className='parent-swiper-box'>
               <div className='h-100 mx-swiper-box'>
                 <Swiper
-                  modules={[Navigation]}
+                  modules={[Navigation , Autoplay]}
                   navigation={{
                     nextEl: '#NewProducts-next',
                     prevEl: '#NewProducts-prev'
+                  }}
+                  autoplay={{
+                    delay: 6500, // فاصله بین اسلایدها به میلی‌ثانیه  
+                    disableOnInteraction: false, // متوقف نشود با تعاملات کاربر  
                   }}
                   spaceBetween={20}
                   loop={true}
@@ -170,8 +182,7 @@ function ProductSlide(prop) {
                       slidesPerView: 4, // سه اسلاید برای صفحه نمایش بزرگ  
                     }
                   }}
-                  style={{ height: '27rem', overflow: 'hidden' }}
-                  className='px-2'
+                  className='px-2 swiper-st'
                 >
 
                   {prop.children}
