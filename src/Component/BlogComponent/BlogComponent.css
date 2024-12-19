@@ -1,0 +1,11 @@
+.banner-blog-main::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  background-image: linear-gradient(180deg, rgba(2, 25, 89, 0) 0%, #021959 100%) !important;
+  opacity: 0.7 !important;
+  border-radius: 1rem !important;
+}
