@@ -3,6 +3,7 @@
   height: 90% !important;
   overflow: hidden !important;
   border-radius: 1rem !important;
+  box-shadow: 0 3px 8px var(--bg-head-section) , 0 5px 12px var(--bg-head-section);
 }
 .img-banner-newproduct {
   width: 100% !important;
