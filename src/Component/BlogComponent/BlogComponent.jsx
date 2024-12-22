@@ -84,19 +84,21 @@ export function BannerBlogMain() {
 export function SuggestedBlog(prop) {
   return (
     <div className="col-12 p-0">
-      <Link to='/' className={`${!prop.flagBorder ? '' : 'SuggestedBlog'} position-relative w-100 h-100 d-flex justify-content-center align-items-center text-decoration-none`}>
+      <div className={`${!prop.flagBorder ? '' : 'SuggestedBlog'} position-relative w-100 h-100 d-flex justify-content-center align-items-center`}>
 
         <div className="row w-100 h-100">
           <div className="col-4 px-0">
-            <div className='w-100 h-100 position-relative banner-blog-main'>
-              <img src={prop.src} className='img-banner-main-blog' alt="" />
-            </div>
+            <Link to='/'>
+              <div className='w-100 h-100 position-relative banner-blog-main'>
+                <img src={prop.src} className='img-banner-main-blog' alt="" />
+              </div>
+            </Link>
           </div>
 
           <div className="col-8 ps-0">
             <div className='w-100 h-100 d-flex flex-column justify-content-around'>
-              <span className='text-color-main text-st-blog-suggested fs-6' >{prop.title}</span>
-              <span className='mt-subtext-suggested-blog sub-text-color-main text-st-blog-suggested fs-suggested-blog-text' dir='rtl'>{prop.subTitle}</span>
+              <Link to='/' className='text-color-main text-st-blog-suggested text-decoration-none fs-6' >{prop.title}</Link>
+              <span className='mt-subtext-suggested-blog  sub-text-color-main text-st-blog-suggested fs-suggested-blog-text' dir='rtl'>{prop.subTitle}</span>
 
               <div className='w-100 d-flex flex-row justify-content-between pt-2 sub-text-color-main'>
 
@@ -117,19 +119,19 @@ export function SuggestedBlog(prop) {
                   </span>
                 </div>
 
-                <Link to='/' className='text-decoration-none fs-suggested-blog-text text-color-main text-start d-flex justify-content-center align-items-center'>
-                  <span className='w-100'>
+                <div className='text-decoration-none fs-suggested-blog-text text-start d-flex justify-content-center align-items-center'>
+                  <Link to='/' className='w-100 text-decoration-none text-color-main'>
                     مدیر سایت
-                    <FaAngleLeft className='me-1 text-color-main'/>
-                  </span>
-                </Link>
+                    <FaAngleLeft className='me-1 text-color-main' />
+                  </Link>
+                </div>
               </div>
 
             </div>
           </div>
         </div>
 
-      </Link>
+      </div>
     </div>
   )
 }
