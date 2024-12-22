@@ -21,10 +21,10 @@ function BlogComponent() {
 
           <div className="col-xl-5 col-12">
             <>
-              <div className="h-blog-item row  row-gap-3">
-                <SuggestedBlog />
-                <SuggestedBlog />
-                <SuggestedBlog />
+              <div className="h-blog-item row h-100 row-gap-3">
+                <SuggestedBlog src='./assets/img/BlogImg/pci1.png' />
+                <SuggestedBlog src='./assets/img/BlogImg/mag.jpg' />
+                <SuggestedBlog src='./assets/img/BlogImg/mag3.jpg' />
               </div>
             </>
           </div>
@@ -80,7 +80,7 @@ export function BannerBlogMain() {
   )
 }
 
-export function SuggestedBlog() {
+export function SuggestedBlog(prop) {
   return (
     <div className="col-12 p-0">
       <Link to='/' className='w-100 h-100  d-flex justify-content-center align-items-center text-decoration-none'>
@@ -88,7 +88,7 @@ export function SuggestedBlog() {
         <div className="row w-100 h-100">
           <div className="col-4 px-0">
             <div className='w-100 h-100 position-relative banner-blog-main'>
-              <img src="./assets/img/BlogImg/mag3.jpg" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1rem' }} alt="" />
+              <img src={prop.src} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '1rem' }} alt="" />
             </div>
           </div>
 
