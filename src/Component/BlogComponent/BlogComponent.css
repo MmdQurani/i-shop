@@ -14,8 +14,22 @@
   font-size: 1rem !important;
 }
 
+.h-blog-item {
+  height: 100% !important;
+}
+
+@media only screen and (max-width:768px) {
+  .h-blog-item {
+    height: 24rem !important;
+  }
+}
 @media only screen and (max-width:576px) {
   .fs-xs-banner-blog {
     font-size: 0.8rem !important;
+  }
+}
+@media only screen and (max-width:380px) {
+  .h-blog-item {
+    height: 21rem !important;
   }
 }

@@ -20,7 +20,7 @@ function ProductSlide(prop) {
             <div className='parent-swiper-box-two'>
               <div className='h-100 mx-swiper-box'>
                 <Swiper
-                  modules={[Navigation , Autoplay]}
+                  modules={[Navigation, Autoplay]}
                   navigation={{
                     nextEl: '#NewProducts-next',
                     prevEl: '#NewProducts-prev'
@@ -35,7 +35,7 @@ function ProductSlide(prop) {
                     100: {
                       slidesPerView: 1, // یک اسلاید برای صفحه نمایش کوچک  
                     },
-                    440: {
+                    470: {
                       slidesPerView: 1.2, // یک اسلاید برای صفحه نمایش کوچک  
                     },
                     520: {
@@ -47,10 +47,7 @@ function ProductSlide(prop) {
                     992: {
                       slidesPerView: 2.7, // سه اسلاید برای صفحه نمایش بزرگ  
                     },
-                    1024: {
-                      slidesPerView: 2.7, // سه اسلاید برای صفحه نمایش بزرگ  
-                    },
-                    1200: {
+                    1280: {
                       slidesPerView: 2.3, // سه اسلاید برای صفحه نمایش بزرگ  
                     },
                     1400: {
@@ -84,7 +81,7 @@ function ProductSlide(prop) {
             <div className='parent-swiper-box'>
               <div className='h-100 mx-swiper-box'>
                 <Swiper
-                  modules={[Navigation , Autoplay]}
+                  modules={[Navigation, Autoplay]}
                   navigation={{
                     nextEl: '#NewProducts-next',
                     prevEl: '#NewProducts-prev'
@@ -99,7 +96,7 @@ function ProductSlide(prop) {
                     100: {
                       slidesPerView: 1, // یک اسلاید برای صفحه نمایش کوچک  
                     },
-                    440: {
+                    470: {
                       slidesPerView: 1.2, // یک اسلاید برای صفحه نمایش کوچک  
                     },
                     520: {
@@ -111,10 +108,7 @@ function ProductSlide(prop) {
                     992: {
                       slidesPerView: 2.7, // سه اسلاید برای صفحه نمایش بزرگ  
                     },
-                    1024: {
-                      slidesPerView: 2.7, // سه اسلاید برای صفحه نمایش بزرگ  
-                    },
-                    1200: {
+                    1280: {
                       slidesPerView: 3, // سه اسلاید برای صفحه نمایش بزرگ  
                     },
                     1400: {
@@ -142,7 +136,7 @@ function ProductSlide(prop) {
             <div className='parent-swiper-box'>
               <div className='h-100 mx-swiper-box'>
                 <Swiper
-                  modules={[Navigation , Autoplay]}
+                  modules={[Navigation, Autoplay]}
                   navigation={{
                     nextEl: '#NewProducts-next',
                     prevEl: '#NewProducts-prev'
@@ -157,7 +151,7 @@ function ProductSlide(prop) {
                     100: {
                       slidesPerView: 1, // یک اسلاید برای صفحه نمایش کوچک  
                     },
-                    440: {
+                    470: {
                       slidesPerView: 1.2, // یک اسلاید برای صفحه نمایش کوچک  
                     },
                     520: {
@@ -169,10 +163,7 @@ function ProductSlide(prop) {
                     992: {
                       slidesPerView: 2.7, // سه اسلاید برای صفحه نمایش بزرگ  
                     },
-                    1024: {
-                      slidesPerView: 2.7, // سه اسلاید برای صفحه نمایش بزرگ  
-                    },
-                    1200: {
+                    1280: {
                       slidesPerView: 3, // سه اسلاید برای صفحه نمایش بزرگ  
                     },
                     1400: {

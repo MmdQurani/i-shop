@@ -36,7 +36,7 @@ export function PriceCard(prop) {
   
   return (
     <span className={`fs-price-card ${prop.dis} text-color-main`} dir='rtl'>
-      {prop.price} <span style={{ fontSize: '10px' }}>تومان</span>
+      {prop.price} <span style={{ fontSize: '8px' }}>تومان</span>
     </span>
   )
 }

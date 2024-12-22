@@ -28,18 +28,15 @@
   text-decoration: line-through !important;
 }
 
-@media only screen and (max-width:390px) {
-  .fs-price-card {
-    font-size: 0.8rem !important;
-  }
-}
-
 .fs-btn-card {
   font-size: 1rem !important;
 }
 
-@media only screen and (max-width:390px) {
+@media only screen and (max-width:400px) {
   .fs-btn-card {
-    font-size: 0.75rem !important;
+    font-size: 0.7rem !important;
+  }
+  .fs-price-card {
+    font-size: 0.9rem !important;
   }
 }
