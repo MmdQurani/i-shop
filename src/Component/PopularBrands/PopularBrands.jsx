@@ -61,7 +61,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
@@ -70,7 +70,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
@@ -79,7 +79,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
@@ -88,7 +88,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
@@ -97,7 +97,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
@@ -106,7 +106,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
@@ -115,7 +115,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
@@ -124,7 +124,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
@@ -133,7 +133,7 @@ export function PopularBrands() {
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
             <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
