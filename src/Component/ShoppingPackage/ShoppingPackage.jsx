@@ -20,7 +20,7 @@ function ShoppingPackage() {
 
             <div className='d-flex flex-column w-100 p-2'>
               <span className='fs-5'>پکیج گیمرها</span>
-              <p className='m-0 mb-2 mt-3' style={{ fontSize: '13px' }}>این پکیج شامل تخفیفی عالی برای خرید چهار محصول با هم است ، برای کسانی که عاشق بازی هستند …</p>
+              <p className='m-0 mb-2 mt-3 text-st-blog-suggested' style={{ fontSize: '13px' }}>این پکیج شامل تخفیفی عالی برای خرید چهار محصول با هم است ، برای کسانی که عاشق بازی هستند …</p>
             </div>
 
             <div className="row row-gap-3 w-100 py-2">
@@ -88,8 +88,8 @@ export function DataPackage() {
   return (
     <div className="col-6">
       <div>
-        <p className='m-0 mb-2' style={{ fontSize: '13px' }}>نام پکیج</p>
-        <span>پکیج گیمرها</span>
+        <p className='m-0 mb-2 sub-text-color-main' style={{ fontSize: '13px' }}>نام پکیج</p>
+        <span style={{ fontSize: '15px' }}>پکیج گیمرها</span>
       </div>
     </div>
   )
