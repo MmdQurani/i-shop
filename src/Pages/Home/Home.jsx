@@ -10,6 +10,7 @@ import Amazing from '../../Component/Amazing/Amazing'
 import ApprovedProducts from '../../Component/ApprovedProducts/ApprovedProducts'
 import ShoppingPackage from '../../Component/ShoppingPackage/ShoppingPackage'
 import BlogComponent from '../../Component/BlogComponent/BlogComponent'
+import PopularBrands from '../../Component/PopularBrands/PopularBrands'
 
 function Home() {
   return (
@@ -25,6 +26,7 @@ function Home() {
       <Laptop />
       <ShoppingPackage />
       <BlogComponent />
+      <PopularBrands />
     </main>
   )
 }
