@@ -57,83 +57,83 @@ function PopularBrandsSlider(prop) {
 export function PopularBrands() {
   return (
     <PopularBrandsSlider>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
               <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <img src="./assets/img/PopularBrandsImg/2.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+            </div>
+          </div>
+        </Link>
+      </SwiperSlide>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
+        <Link to='/' className='text-decoration-none'>
+          <div className='w-100 h-100 d-flex flex-column'>
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <img src="./assets/img/PopularBrandsImg/6.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+            </div>
+          </div>
+        </Link>
+      </SwiperSlide>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
+        <Link to='/' className='text-decoration-none'>
+          <div className='w-100 h-100 d-flex flex-column'>
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <img src="./assets/img/PopularBrandsImg/apple.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+            </div>
+          </div>
+        </Link>
+      </SwiperSlide>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
+        <Link to='/' className='text-decoration-none'>
+          <div className='w-100 h-100 d-flex flex-column'>
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
               <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <img src="./assets/img/PopularBrandsImg/2.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <img src="./assets/img/PopularBrandsImg/6.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <img src="./assets/img/PopularBrandsImg/apple.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>
       </SwiperSlide>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
+      <SwiperSlide className=' bg-main rounded-3 PopularBrands-box PopularCategories-slider-box-shadow my-auto'>
         <Link to='/' className='text-decoration-none'>
           <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
-            </div>
-          </div>
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
-        <Link to='/' className='text-decoration-none'>
-          <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
-            </div>
-          </div>
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
-        <Link to='/' className='text-decoration-none'>
-          <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
-            </div>
-          </div>
-        </Link>
-      </SwiperSlide>
-      <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
-        <Link to='/' className='text-decoration-none'>
-          <div className='w-100 h-100 d-flex flex-column'>
-            <div style={{ width: '100%', height: '100%' }} className='d-flex justify-content-center align-items-center'>
-              <img src="./assets/img/PopularBrandsImg/1.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <img src="./assets/img/PopularBrandsImg/6.png" style={{ width: '60%', objectFit: 'cover' }} alt="" />
             </div>
           </div>
         </Link>

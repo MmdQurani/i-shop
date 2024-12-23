@@ -1,0 +1,6 @@
+.PopularBrands-box {
+  transition: 200ms !important;
+}
+.PopularBrands-box:hover {
+  background-color: #F6F7FC !important;
+}
