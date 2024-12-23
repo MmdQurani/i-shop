@@ -9,7 +9,7 @@
 }
 
 .PopularCategories-slider-box-shadow {
-  box-shadow: 0 0 5px var(--bg-head-section);
+  box-shadow: 0 0 10px var(--bg-head-section);
   height: 90% !important;
 }
 

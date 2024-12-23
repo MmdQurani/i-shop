@@ -35,7 +35,7 @@ function PopularCategories() {
                 slidesPerView: 6, // سه اسلاید برای صفحه نمایش بزرگ  
               },
               1400: {
-                slidesPerView: 9.2, // سه اسلاید برای صفحه نمایش بزرگ  
+                slidesPerView: 8, // سه اسلاید برای صفحه نمایش بزرگ  
               }
             }}
             style={{ height: '10rem', overflow: 'hidden' }}
