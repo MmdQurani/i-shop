@@ -120,9 +120,9 @@ export function SuggestedBlog(prop) {
                 </div>
 
                 <div className='text-decoration-none fs-suggested-blog-text text-start d-flex justify-content-center align-items-center'>
-                  <Link to='/' className='w-100 text-decoration-none text-color-main'>
+                  <Link to='/' className='w-100 text-decoration-none sub-text-color-main'>
                     مدیر سایت
-                    <FaAngleLeft className='me-1 text-color-main' />
+                    <FaAngleLeft className='me-1' />
                   </Link>
                 </div>
               </div>
