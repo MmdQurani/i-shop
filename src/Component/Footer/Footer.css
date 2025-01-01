@@ -18,3 +18,7 @@
 .ItemSiteFooter:hover {
   color: var(--text-hover) !important;
 }
+
+.row-gap-footer-site-item {
+  row-gap: 2rem !important;
+}

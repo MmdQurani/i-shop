@@ -99,7 +99,7 @@ function ProductSlide(prop) {
                     470: {
                       slidesPerView: 1.2, // یک اسلاید برای صفحه نمایش کوچک  
                     },
-                    520: {
+                    560: {
                       slidesPerView: 1.5, // یک اسلاید برای صفحه نمایش کوچک  
                     },
                     800: {
@@ -118,7 +118,7 @@ function ProductSlide(prop) {
                       slidesPerView: 4, // سه اسلاید برای صفحه نمایش بزرگ  
                     }
                   }}
-                  className='px-3 bg-btn swiper-st'
+                  className='px-2 bg-btn swiper-st'
                 >
 
                   {prop.children}
