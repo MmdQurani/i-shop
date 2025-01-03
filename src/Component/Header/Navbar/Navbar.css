@@ -1,10 +1,14 @@
 .link-st {
-  text-decoration: none;
-  color: var(--text-color-main);
-  transition: 200ms;
-  font-size: 15px;
+  text-decoration: none !important;
+  color: var(--text-color-main) !important;
+  transition: 200ms !important;
+  font-size: 15px !important;
 }
 
 .link-st:hover{
-  color: var(--text-hover);
+  color: var(--text-hover) !important;
+}
+
+.list-group-item {
+  cursor: pointer !important;
 }

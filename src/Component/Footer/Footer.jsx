@@ -62,6 +62,36 @@ function Footer() {
           <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
             <div className='h-100 w-100 d-flex flex-column'>
               <TitleSiteFooter title='چگونه به مــــــا اعتماد کنیم' />
+
+              <div className='d-flex w-100 h-100 justify-content-start align-items-center flex-column mt-4 row-gap-footer-site-item '>
+                <div className="row w-100 h-100 row-gap-3">
+
+                  <div className="col-12 d-flex justify-content-center p-0">
+                    <div className="row w-100 h-100 justify-content-around">
+                      <div className="col-sm-4 col-md-3 col-xl-4 col-3 col-namd-img p-lg-namad-img h-100">
+                        <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
+                          <img src="./assets/img/Namad/3-1.png" alt="" style={{width:'100%'}} />
+                        </Link>
+                      </div>
+                      <div className="col-sm-4 col-md-3 col-xl-4 col-3 col-namd-img p-lg-namad-img h-100">
+                        <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
+                          <img src="./assets/img/Namad/3-1.png" alt="" style={{width:'100%'}} />
+                        </Link>
+                      </div>
+                      <div className="col-sm-4 col-md-3 col-xl-4 col-3 col-namd-img p-lg-namad-img h-100">
+                        <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
+                          <img src="./assets/img/Namad/3-1.png" alt="" style={{width:'100%'}} />
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 bg-warning w-100 d-flex">
+                    media
+                  </div>
+
+                </div>
+              </div>
+              
             </div>
           </div>
 
@@ -89,11 +119,11 @@ export function SiteFooterProducts(prop) {
   return (
     <>
       <div className='row d-flex justify-content-between w-100'>
-        <div className="col-5 d-flex justify-content-center">
-          <Link to='/' className='title-product-site-footer text-decoration-none text-color-main text-st-blog-suggested w-100' style={{ fontSize: '12px' }}>لپ تاپ سرفیس مایکروسافت</Link>
+        <div className="col-6 d-flex justify-content-center">
+          <Link to='/' className='title-product-site-footer text-decoration-none text-color-main text-st-blog-suggested w-100 ItemSiteFooter' style={{ fontSize: '0.8rem' }}>لپ تاپ سرفیس مایکروسافت</Link>
         </div>
-        <div className="col-5 p-0 d-flex justify-content-center">
-          <span className='price-product-site-footer text-st-blog-suggested text-color-main w-100 d-flex justify-content-end' style={{ fontSize: '12px' }}>51,000,000 تومان</span>
+        <div className="col-4 p-0 d-flex justify-content-center">
+          <span className='price-product-site-footer text-st-blog-suggested text-color-main w-100 d-flex justify-content-end' style={{ fontSize: '0.8rem' }}>51,000,000 تومان</span>
         </div>
       </div>
     </>
@@ -104,7 +134,7 @@ export function TitleSiteFooter(prop) {
   return (
     <>
       <div className='position-relative pb-3'>
-        <span className='TitleSiteFooter sub-text-color-main w-100 d-flex w-100' style={{ fontSize: '14px' }}>{prop.title}</span>
+        <span className='TitleSiteFooter sub-text-color-main w-100 d-flex w-100' style={{ fontSize: '0.9rem' }}>{prop.title}</span>
       </div>
     </>
   )
@@ -114,7 +144,7 @@ export function ItemSiteFooter(prop) {
   return (
     <>
       <div className='d-flex w-75'>
-        <Link to='/' className='text-decoration-none text-st-blog-suggested text-color-main ItemSiteFooter' style={{ width: 'max-content', fontSize: '12px' }}>{prop.item}</Link>
+        <Link to='/' className='text-decoration-none text-st-blog-suggested text-color-main ItemSiteFooter' style={{ width: 'max-content', fontSize: '0.8rem' }}>{prop.item}</Link>
       </div>
     </>
   )
