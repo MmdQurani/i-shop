@@ -1,8 +1,7 @@
 import React from 'react'
-import './footer.css'
+import './Footer.css'
 import { Link } from 'react-router-dom'
 import { FaInstagram, FaWhatsapp, FaTelegram, FaFacebook, FaTwitter } from "react-icons/fa";
-import { RxTwitterLogo } from "react-icons/rx";
 
 function Footer() {
   return (
