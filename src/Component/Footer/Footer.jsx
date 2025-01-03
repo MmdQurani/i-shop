@@ -1,6 +1,8 @@
 import React from 'react'
 import './footer.css'
 import { Link } from 'react-router-dom'
+import { FaInstagram, FaWhatsapp, FaTelegram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { RxTwitterLogo } from "react-icons/rx";
 
 function Footer() {
   return (
@@ -68,30 +70,42 @@ function Footer() {
 
                   <div className="col-12 d-flex justify-content-center p-0">
                     <div className="row w-100 h-100 justify-content-around">
-                      <div className="col-sm-4 col-md-3 col-xl-4 col-3 col-namd-img p-lg-namad-img h-100">
-                        <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
-                          <img src="./assets/img/Namad/3-1.png" alt="" style={{width:'100%'}} />
-                        </Link>
-                      </div>
-                      <div className="col-sm-4 col-md-3 col-xl-4 col-3 col-namd-img p-lg-namad-img h-100">
-                        <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
-                          <img src="./assets/img/Namad/3-1.png" alt="" style={{width:'100%'}} />
-                        </Link>
-                      </div>
-                      <div className="col-sm-4 col-md-3 col-xl-4 col-3 col-namd-img p-lg-namad-img h-100">
-                        <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
-                          <img src="./assets/img/Namad/3-1.png" alt="" style={{width:'100%'}} />
-                        </Link>
-                      </div>
+                      <NamadWeb src='3-1.png' />
+                      <NamadWeb src='4-2.png' />
+                      <NamadWeb src='logo.png' />
                     </div>
                   </div>
-                  <div className="col-12 bg-warning w-100 d-flex">
-                    media
+
+                  <div className="col-12 w-100 d-flex p-0 d-flex flex-column">
+                    <TitleSiteFooter title='ما در شبکه های اجتماعی' />
+
+                    <div className='d-flex w-100 h-100 flex-row mt-4 justify-content-around'>
+                      <SocialMedia to='/'>
+                        <FaInstagram fontSize={24} className='socials-footer' />
+                      </SocialMedia>
+
+                      <SocialMedia to='/'>
+                        <FaWhatsapp fontSize={24} className='socials-footer' />
+                      </SocialMedia>
+
+                      <SocialMedia to='/'>
+                        <FaTwitter fontSize={24} className='socials-footer' />
+                      </SocialMedia>
+
+                      <SocialMedia to='/'>
+                        <FaTelegram fontSize={24} className='socials-footer' />
+                      </SocialMedia>
+
+                      <SocialMedia to='/'>
+                        <FaFacebook fontSize={24} className='socials-footer' />
+                      </SocialMedia>
+                    </div>
+
                   </div>
 
                 </div>
               </div>
-              
+
             </div>
           </div>
 
@@ -146,6 +160,28 @@ export function ItemSiteFooter(prop) {
       <div className='d-flex w-75'>
         <Link to='/' className='text-decoration-none text-st-blog-suggested text-color-main ItemSiteFooter' style={{ width: 'max-content', fontSize: '0.8rem' }}>{prop.item}</Link>
       </div>
+    </>
+  )
+}
+
+export function NamadWeb(prop) {
+  return (
+    <>
+      <div className="col-sm-4 col-md-3 col-xl-4 col-3 col-namd-img p-lg-namad-img h-100">
+        <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
+          <img src={`./assets/img/Namad/${prop.src}`} alt="" style={{ width: '100%' }} />
+        </Link>
+      </div>
+    </>
+  )
+}
+
+export function SocialMedia(prop) {
+  return (
+    <>
+      <Link to={`${prop.to}`}>
+        {prop.children}
+      </Link>
     </>
   )
 }

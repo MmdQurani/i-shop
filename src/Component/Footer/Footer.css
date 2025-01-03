@@ -28,6 +28,15 @@
   padding: 0 !important;
 }
 
+.socials-footer{
+  color: var(--subtext-color-main) !important;
+  transition: 200ms;
+}
+
+.socials-footer:hover{
+  color: var(--text-color-main) !important;
+}
+
 @media only screen and (min-width:992px) {
   .p-lg-namad-img {
     padding: 0.35rem !important;
