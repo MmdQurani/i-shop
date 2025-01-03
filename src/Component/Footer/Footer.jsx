@@ -11,7 +11,7 @@ function Footer() {
 
           <div className="col-xl-6 col-12 d-flex justify-content-center">
             <div className="row row-gap-5 w-100">
-              <SiteFooterMenu title='دسترسی های سریع' col='col-xl-3'>
+              <SiteFooterMenu title='دسترسی های سریع' col='col-xl-4 col-xxl-3'>
                 <ItemSiteFooter item='صفحه اصلی' />
                 <ItemSiteFooter item='صفحه اصلی' />
                 <ItemSiteFooter item='صفحه اصلی' />
@@ -35,9 +35,9 @@ function Footer() {
                 <ItemSiteFooter item='سبد خرید' />
                 <ItemSiteFooter item='سبد خرید' />
               </SiteFooterMenu>
-              <SiteFooterMenu title='دسته بندی ها' col='col-xl-3'>
+              <SiteFooterMenu title='دسته بندی ها' col='col-xl-2 col-xxl-3'>
                 <ItemSiteFooter item='موبایل' />
-                <ItemSiteFooter item='موبایل' />
+                <ItemSiteFooter item=' موبایل موبایل' />
                 <ItemSiteFooter item='موبایل' />
                 <ItemSiteFooter item='موبایل' />
                 <ItemSiteFooter item='موبایل' />
@@ -133,10 +133,10 @@ export function SiteFooterProducts(prop) {
     <>
       <div className='row d-flex justify-content-between w-100'>
         <div className="col-6 d-flex justify-content-center">
-          <Link to='/' className='title-product-site-footer text-decoration-none text-color-main text-st-blog-suggested w-100 ItemSiteFooter' style={{ fontSize: '0.8rem' }}>لپ تاپ سرفیس مایکروسافت</Link>
+          <Link to='/' className='title-product-site-footer text-decoration-none text-color-main text-st-blog-suggested w-100 ItemSiteFooter' style={{ fontSize: '14px' }}>لپ تاپ سرفیس مایکروسافت</Link>
         </div>
         <div className="col-4 p-0 d-flex justify-content-center">
-          <span className='price-product-site-footer text-st-blog-suggested text-color-main w-100 d-flex justify-content-end' style={{ fontSize: '0.8rem' }}>51,000,000 تومان</span>
+          <span className='price-product-site-footer text-st-blog-suggested text-color-main w-100 d-flex justify-content-end' style={{ fontSize: '14px' }}>51,000,000 تومان</span>
         </div>
       </div>
     </>
@@ -147,7 +147,7 @@ export function TitleSiteFooter(prop) {
   return (
     <>
       <div className='position-relative pb-3'>
-        <span className='TitleSiteFooter sub-text-color-main w-100 d-flex w-100' style={{ fontSize: '0.9rem' }}>{prop.title}</span>
+        <span className='TitleSiteFooter sub-text-color-main w-100 d-flex w-100 fs-6'>{prop.title}</span>
       </div>
     </>
   )
@@ -157,7 +157,7 @@ export function ItemSiteFooter(prop) {
   return (
     <>
       <div className='d-flex w-75'>
-        <Link to='/' className='text-decoration-none text-st-blog-suggested text-color-main ItemSiteFooter' style={{ width: 'max-content', fontSize: '0.8rem' }}>{prop.item}</Link>
+        <Link to='/' className='text-decoration-none text-st-blog-suggested text-color-main ItemSiteFooter' style={{ width: 'max-content', fontSize: '14px' }}>{prop.item}</Link>
       </div>
     </>
   )
