@@ -1,12 +1,14 @@
 import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
-import { FaInstagram, FaWhatsapp, FaTelegram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaTelegram, FaFacebook, FaTwitter, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 function Footer() {
   return (
     <footer className='w-100 h-100 footer-shadow'>
       <div className='p-0 d-flex flex-column h-100 container mt-5 py-5 justify-content-center align-items-center' style={{ height: 'max-content' }}>
+
         <div className="row row-gap-5 w-100 justify-content-center" dir='rtl'>
 
           <div className="col-xl-6 col-12 d-flex justify-content-center">
@@ -102,6 +104,104 @@ function Footer() {
 
                   </div>
 
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div className="call-info-footer position-relative row w-100 mt-5" dir='rtl'>
+
+          <div className="call-info-box-footer col-xxl-5 col-sm-12 pt-4">
+
+            <div className='d-flex flex-column row-gap-3 fs-6 text-color-main'>
+
+              <div className='d-flex flex-row justify-content-between'>
+                <span style={{ fontSize: '16px', width: 'max-content' }} className='ps-5'> مرکز تماس مشتریان</span>
+                <span style={{ fontSize: '19px' }} className='d-flex flex-nowrap align-items-center justify-content-center'>
+                  <span>02123456789</span>
+                  <FaPhoneAlt fontSize={18} className='me-2' />
+                </span>
+              </div>
+
+              <div className='d-flex flex-row justify-content-between'>
+                <span style={{ fontSize: '12px', width: 'max-content' }} className='ps-5'>به صورت شبانه روزی پشتیبان شما هستیم</span>
+                <span style={{ fontSize: '12px' }} className='d-flex flex-nowrap align-items-center justify-content-center'>
+                  <span>info@sitename.com</span>
+                  <FaEnvelope fontSize={18} className='me-2' />
+                </span>
+              </div>
+
+              <div className='d-flex flex-row justify-content-between'>
+                <span style={{ fontSize: '12px', width: 'max-content' }} className='ps-5'>رضایت مشتری برای ما در اولویت است</span>
+                <span style={{ fontSize: '12px' }} className='d-flex flex-nowrap align-items-center justify-content-center'>
+                  <span style={{ textWrap: 'wrap' }}>تهران ، چیتگر ، میدان ساحل ، خیابان نیما یوشیج</span>
+                  <FaLocationDot fontSize={18} className='me-2' />
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div className="col-xxl-7 col-sm-12 pt-4 d-flex justify-content-center">
+            <div className='row w-100 h-100 text-color-main px-3 py-2 rounded-2 justify-content-between footer-shadow'>
+
+            <div className="col-md-1 col-6">
+                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+                  <img src="./assets/img/FooterImg/8.png" alt="" />
+                  <span>hello</span>
+                </div>
+              </div>
+
+              <div className="col-md-1 col-6">
+                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+                  <img src="./assets/img/FooterImg/8.png" alt="" />
+                  <span>hello</span>
+                </div>
+              </div>
+
+              <div className="col-md-1 col-6">
+                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+                  <img src="./assets/img/FooterImg/8.png" alt="" />
+                  <span>hello</span>
+                </div>
+              </div>
+
+              <div className="col-md-1 col-6">
+                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+                  <img src="./assets/img/FooterImg/8.png" alt="" />
+                  <span>hello</span>
+                </div>
+              </div>
+
+              <div className="col-md-1 col-6">
+                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+                  <img src="./assets/img/FooterImg/8.png" alt="" />
+                  <span>hello</span>
+                </div>
+              </div>
+
+              <div className="col-md-1 col-6">
+                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+                  <img src="./assets/img/FooterImg/8.png" alt="" />
+                  <span>hello</span>
+                </div>
+              </div>
+
+              <div className="col-md-1 col-6">
+                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+                  <img src="./assets/img/FooterImg/8.png" alt="" />
+                  <span>hello</span>
+                </div>
+              </div>
+
+              <div className="col-md-1 col-6">
+                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+                  <img src="./assets/img/FooterImg/8.png" alt="" />
+                  <span>hello</span>
                 </div>
               </div>
 
