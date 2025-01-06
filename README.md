@@ -10,6 +10,8 @@
 
 <h2>tips</h2>
 
+- <span>This site is developed as a SPA</span>
+- <span>This site is developed with a functional and completely component-based paradigm</span>
 - <span>All pages are fully responsive for all devices</span>
 - <span>This project is fully developed with react js library</span>
 - <span>react-bootstrap library is used</span>
