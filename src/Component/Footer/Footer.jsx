@@ -112,33 +112,33 @@ function Footer() {
 
         </div>
 
-        <div className="call-info-footer position-relative row w-100 mt-5" dir='rtl'>
+        <div className="call-info-footer position-relative row row-gap-4 pt-4 w-100 mt-5" dir='rtl'>
 
-          <div className="call-info-box-footer col-xxl-5 col-sm-12 pt-4">
+          <div className="call-info-box-footer d-flex align-items-center justify-content-center col-xxl-5 col-sm-12 pt-4">
 
-            <div className='d-flex flex-column row-gap-3 fs-6 text-color-main'>
+            <div className='d-flex w-100 flex-column row-gap-3 fs-6 text-color-main'>
 
               <div className='d-flex flex-row justify-content-between'>
-                <span style={{ fontSize: '16px', width: 'max-content' }} className='ps-5'> مرکز تماس مشتریان</span>
+                <span style={{ fontSize: '16px', width: 'max-content' }} className='ps-4'> مرکز تماس مشتریان</span>
                 <span style={{ fontSize: '19px' }} className='d-flex flex-nowrap align-items-center justify-content-center'>
                   <span>02123456789</span>
-                  <FaPhoneAlt fontSize={18} className='me-2' />
+                  <FaPhoneAlt className='fs-5 me-2' />
                 </span>
               </div>
 
               <div className='d-flex flex-row justify-content-between'>
-                <span style={{ fontSize: '12px', width: 'max-content' }} className='ps-5'>به صورت شبانه روزی پشتیبان شما هستیم</span>
+                <span style={{ fontSize: '12px', width: 'max-content' }} className='ps-4'>به صورت شبانه روزی پشتیبان شما هستیم</span>
                 <span style={{ fontSize: '12px' }} className='d-flex flex-nowrap align-items-center justify-content-center'>
                   <span>info@sitename.com</span>
-                  <FaEnvelope fontSize={18} className='me-2' />
+                  <FaEnvelope className='fs-5 me-2' />
                 </span>
               </div>
 
               <div className='d-flex flex-row justify-content-between'>
-                <span style={{ fontSize: '12px', width: 'max-content' }} className='ps-5'>رضایت مشتری برای ما در اولویت است</span>
+                <span style={{ fontSize: '12px', width: 'max-content' }} className='ps-4'>رضایت مشتری برای ما در اولویت است</span>
                 <span style={{ fontSize: '12px' }} className='d-flex flex-nowrap align-items-center justify-content-center'>
                   <span style={{ textWrap: 'wrap' }}>تهران ، چیتگر ، میدان ساحل ، خیابان نیما یوشیج</span>
-                  <FaLocationDot fontSize={18} className='me-2' />
+                  <FaLocationDot className='fs-5 me-2' />
                 </span>
               </div>
 
@@ -147,63 +147,16 @@ function Footer() {
           </div>
 
           <div className="col-xxl-7 col-sm-12 pt-4 d-flex justify-content-center">
-            <div className='row w-100 h-100 text-color-main px-3 py-2 rounded-2 justify-content-between footer-shadow'>
+            <div className='row w-100 h-100 text-color-main px-3 py-3 rounded-2 row-gap-4 justify-content-between footer-shadow'>
 
-            <div className="col-md-1 col-6">
-                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-                  <img src="./assets/img/FooterImg/8.png" alt="" />
-                  <span>hello</span>
-                </div>
-              </div>
-
-              <div className="col-md-1 col-6">
-                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-                  <img src="./assets/img/FooterImg/8.png" alt="" />
-                  <span>hello</span>
-                </div>
-              </div>
-
-              <div className="col-md-1 col-6">
-                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-                  <img src="./assets/img/FooterImg/8.png" alt="" />
-                  <span>hello</span>
-                </div>
-              </div>
-
-              <div className="col-md-1 col-6">
-                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-                  <img src="./assets/img/FooterImg/8.png" alt="" />
-                  <span>hello</span>
-                </div>
-              </div>
-
-              <div className="col-md-1 col-6">
-                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-                  <img src="./assets/img/FooterImg/8.png" alt="" />
-                  <span>hello</span>
-                </div>
-              </div>
-
-              <div className="col-md-1 col-6">
-                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-                  <img src="./assets/img/FooterImg/8.png" alt="" />
-                  <span>hello</span>
-                </div>
-              </div>
-
-              <div className="col-md-1 col-6">
-                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-                  <img src="./assets/img/FooterImg/8.png" alt="" />
-                  <span>hello</span>
-                </div>
-              </div>
-
-              <div className="col-md-1 col-6">
-                <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-                  <img src="./assets/img/FooterImg/8.png" alt="" />
-                  <span>hello</span>
-                </div>
-              </div>
+              <SiteFooterServices src='./assets/img/FooterImg/8.png' title='پنل پیشرفته' />
+              <SiteFooterServices src='./assets/img/FooterImg/7-1.png' title='پشتیبانی' />
+              <SiteFooterServices src='./assets/img/FooterImg/6-3.png' title='ثبت لوکیشن' />
+              <SiteFooterServices src='./assets/img/FooterImg/4-3.png' title='اطلاعات' />
+              <SiteFooterServices src='./assets/img/FooterImg/5-3.png' title='خبرنامه' />
+              <SiteFooterServices src='./assets/img/FooterImg/3-3.png' title='امنیت' />
+              <SiteFooterServices src='./assets/img/FooterImg/2-4.png' title='سبد خرید' />
+              <SiteFooterServices src='./assets/img/FooterImg/1-4.png' title='پرداخت' />
 
             </div>
           </div>
@@ -280,6 +233,19 @@ export function SocialMedia(prop) {
     <>
       <Link to={`${prop.to}`}>
         {prop.children}
+      </Link>
+    </>
+  )
+}
+
+export function SiteFooterServices(prop) {
+  return (
+    <>
+      <Link to='/' className="col-lg-1 p-0 col-6 text-decoration-none text-color-main">
+        <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
+          <img src={prop.src} alt="" />
+          <span style={{fontSize:'12px'}}>{prop.title}</span>
+        </div>
       </Link>
     </>
   )
