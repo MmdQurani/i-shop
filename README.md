@@ -15,6 +15,7 @@
 - <span>All pages are fully responsive for all devices</span>
 - <span>This project is fully developed with react js library</span>
 - <span>react-bootstrap library is used</span>
+- <span>react-router-dom library is used</span>
 - <span>Swiper library is used</span>
 
 <h2>Technologies used</h2>
@@ -26,4 +27,6 @@
 <h2>Libraries used</h2>
 
 - <span>react js</span>
+- <span>react-router-dom</span>
 - <span>react-bootstrap</span>
+- <span>Swiper</span>
