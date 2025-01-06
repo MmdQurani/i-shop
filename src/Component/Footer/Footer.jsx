@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { Link } from 'react-router-dom'
-import { FaInstagram, FaWhatsapp, FaTelegram, FaFacebook, FaTwitter, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaTelegram, FaFacebook, FaTwitter, FaPhoneAlt, FaEnvelope, FaArrowUp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 function Footer() {
@@ -169,9 +169,35 @@ function Footer() {
           </div>
         </div>
 
+        <div className="SiteFooterCopyRight row call-info-footer row-gap-3 mt-5 position-relative w-100 h-100 pt-5 justify-content-between" dir='rtl'>
+
+          <div className="col-md-5 col-12">
+            <div className="ScrollToFirst w-100 h-100 d-flex row-gap-3 column-gap-3 justify-content-center align-items-center">
+              <button className='btn bg-btn' onClick={() => { ScrollToFirstBtn() }}>
+                <FaArrowUp />
+              </button>
+              <span className='price-product-site-footer sub-text-color-main'>تمامی حقوق برای این فروشگاه محفوظ است</span>
+            </div>
+          </div>
+
+          <div className="col-md-5 col-12">
+            <div className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <Link to='/' className='price-product-site-footer text-color-main text-decoration-none'>طراحی و توسعه داده شده توسط‌ ‌ ‌[ mmd-web ]</Link>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </footer>
   )
+}
+
+function ScrollToFirstBtn() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth' // این ویژگی باعث می‌شود اسکرول به آرامی انجام شود  
+  });
 }
 
 export function SiteFooterMenu(prop) {

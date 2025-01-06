@@ -60,6 +60,10 @@
   font-size: 12px;
 }
 
+.ScrollToFirst {
+  flex-direction: row !important;
+}
+
 @media only screen and (min-width:992px) {
   .p-lg-namad-img {
     padding: 0.35rem !important;
@@ -75,6 +79,9 @@
 @media only screen and (max-width:767px) {
   .p-lg-namad-img {
     padding: 0.35rem !important;
+  }
+  .ScrollToFirst {
+    flex-direction: column !important;
   }
 }
 
