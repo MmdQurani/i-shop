@@ -9,7 +9,7 @@ function Footer() {
     <footer className='w-100 h-100 footer-shadow'>
       <div className='p-0 d-flex flex-column h-100 container mt-5 py-5 justify-content-center align-items-center' style={{ height: 'max-content' }}>
 
-        <div className="row row-gap-5 w-100 justify-content-center" dir='rtl'>
+        <div className="Accesses row row-gap-5 w-100 justify-content-center" dir='rtl'>
 
           <div className="Quick-access col-xl-6 col-12 d-flex justify-content-center">
             <div className="row row-gap-5 w-100">
@@ -52,12 +52,12 @@ function Footer() {
             <div className='h-100 w-100 d-flex flex-column'>
               <TitleSiteFooter title='پرفروش ترین محصولات' />
               <div className='d-flex w-100 h-100 justify-content-between align-items-start flex-column mt-4 row-gap-footer-site-item'>
-                <SiteFooterProducts />
-                <SiteFooterProducts />
-                <SiteFooterProducts />
-                <SiteFooterProducts />
-                <SiteFooterProducts />
-                <SiteFooterProducts />
+                <SiteFooterProducts price='51,000,000' title='لپ تاپ سرفیس مایکروسافت' />
+                <SiteFooterProducts price='51,000,000' title='لپ تاپ سرفیس مایکروسافت' />
+                <SiteFooterProducts price='51,000,000' title='لپ تاپ سرفیس مایکروسافت' />
+                <SiteFooterProducts price='51,000,000' title='لپ تاپ سرفیس مایکروسافت' />
+                <SiteFooterProducts price='51,000,000' title='لپ تاپ سرفیس مایکروسافت' />
+                <SiteFooterProducts price='51,000,000' title='لپ تاپ سرفیس مایکروسافت' />
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ function Footer() {
               </CallInfoItemFooter>
 
               <CallInfoItemFooter value='تهران ، چیتگر ، میدان ساحل ، خیابان نیما یوشیج' title='رضایت مشتری برای ما در اولویت است'>
-              <FaLocationDot className='fs-5 me-2' />
+                <FaLocationDot className='fs-5 me-2' />
               </CallInfoItemFooter>
 
             </div>
@@ -153,6 +153,20 @@ function Footer() {
             </div>
           </div>
 
+        </div>
+
+        <div className="SiteFooterAbout row call-info-footer mt-5 position-relative w-100 h-100 pt-5 row-gap-5" dir='rtl'>
+          <div className="Logo-box-site-footer col-md-4 col-xxl-2 col-12">
+            <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
+              <img src={`./assets/img/Logo/logo1.jpg`} width={220} alt="" />
+            </Link>
+          </div>
+
+          <div className="col-md-8 col-xxl-10 col-12">
+            <span className='price-product-site-footer text-color-main'>
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات طراحی اساسا مورد استفاده قرار گیرد.
+            </span>
+          </div>
         </div>
 
       </div>
@@ -178,10 +192,10 @@ export function SiteFooterProducts(prop) {
     <>
       <div className='row d-flex justify-content-between w-100'>
         <div className="col-6 d-flex justify-content-center">
-          <Link to='/' className='title-product-site-footer text-decoration-none text-color-main text-st-blog-suggested w-100 ItemSiteFooter price-product-site-footer'>لپ تاپ سرفیس مایکروسافت</Link>
+          <Link to='/' className='title-product-site-footer text-decoration-none text-color-main text-st-blog-suggested w-100 ItemSiteFooter price-product-site-footer'>{prop.title}</Link>
         </div>
         <div className="col-4 p-0 d-flex justify-content-center">
-          <span className='price-product-site-footer text-st-blog-suggested text-color-main w-100 d-flex justify-content-end'>51,000,000 تومان</span>
+          <span className='price-product-site-footer text-st-blog-suggested text-color-main w-100 d-flex justify-content-end'>{prop.price} تومان</span>
         </div>
       </div>
     </>
@@ -235,7 +249,7 @@ export function SiteFooterServices(prop) {
     <>
       <Link to='/' className="col-lg-1 p-0 col-6 text-decoration-none text-color-main">
         <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
-          <img src={prop.src} alt="" />
+          <img src={prop.src} style={{ width: '57px' }} alt="" />
           <span style={{ fontSize: '12px' }}>{prop.title}</span>
         </div>
       </Link>
