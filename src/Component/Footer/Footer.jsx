@@ -11,7 +11,7 @@ function Footer() {
 
         <div className="row row-gap-5 w-100 justify-content-center" dir='rtl'>
 
-          <div className="col-xl-6 col-12 d-flex justify-content-center">
+          <div className="Quick-access col-xl-6 col-12 d-flex justify-content-center">
             <div className="row row-gap-5 w-100">
               <SiteFooterMenu title='دسترسی های سریع' col='col-xl-4 col-xxl-3'>
                 <ItemSiteFooter item='صفحه اصلی' />
@@ -48,7 +48,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
+          <div className="Suggested-products col-xl-3 col-sm-6 d-flex justify-content-center">
             <div className='h-100 w-100 d-flex flex-column'>
               <TitleSiteFooter title='پرفروش ترین محصولات' />
               <div className='d-flex w-100 h-100 justify-content-between align-items-start flex-column mt-4 row-gap-footer-site-item'>
@@ -62,7 +62,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-xl-3 col-sm-6 d-flex justify-content-center">
+          <div className="Symbol-trust col-xl-3 col-sm-6 d-flex justify-content-center">
             <div className='h-100 w-100 d-flex flex-column'>
               <TitleSiteFooter title='چگونه به مــــــا اعتماد کنیم' />
 
@@ -126,27 +126,19 @@ function Footer() {
                 </span>
               </div>
 
-              <div className='d-flex flex-row justify-content-between'>
-                <span style={{ fontSize: '12px', width: 'max-content' }} className='ps-4'>به صورت شبانه روزی پشتیبان شما هستیم</span>
-                <span style={{ fontSize: '12px' }} className='d-flex flex-nowrap align-items-center justify-content-center'>
-                  <span>info@sitename.com</span>
-                  <FaEnvelope className='fs-5 me-2' />
-                </span>
-              </div>
+              <CallInfoItemFooter value='info@sitename.com' title='به صورت شبانه روزی پشتیبان شما هستیم'>
+                <FaEnvelope className='fs-5 me-2' />
+              </CallInfoItemFooter>
 
-              <div className='d-flex flex-row justify-content-between'>
-                <span style={{ fontSize: '12px', width: 'max-content' }} className='ps-4'>رضایت مشتری برای ما در اولویت است</span>
-                <span style={{ fontSize: '12px' }} className='d-flex flex-nowrap align-items-center justify-content-center'>
-                  <span style={{ textWrap: 'wrap' }}>تهران ، چیتگر ، میدان ساحل ، خیابان نیما یوشیج</span>
-                  <FaLocationDot className='fs-5 me-2' />
-                </span>
-              </div>
+              <CallInfoItemFooter value='تهران ، چیتگر ، میدان ساحل ، خیابان نیما یوشیج' title='رضایت مشتری برای ما در اولویت است'>
+              <FaLocationDot className='fs-5 me-2' />
+              </CallInfoItemFooter>
 
             </div>
 
           </div>
 
-          <div className="col-xxl-7 col-sm-12 pt-4 d-flex justify-content-center">
+          <div className="SiteFooterServices-box col-xxl-7 col-sm-12 pt-4 d-flex justify-content-center">
             <div className='row w-100 h-100 text-color-main px-3 py-3 rounded-2 row-gap-4 justify-content-between footer-shadow'>
 
               <SiteFooterServices src='./assets/img/FooterImg/8.png' title='پنل پیشرفته' />
@@ -186,10 +178,10 @@ export function SiteFooterProducts(prop) {
     <>
       <div className='row d-flex justify-content-between w-100'>
         <div className="col-6 d-flex justify-content-center">
-          <Link to='/' className='title-product-site-footer text-decoration-none text-color-main text-st-blog-suggested w-100 ItemSiteFooter' style={{ fontSize: '14px' }}>لپ تاپ سرفیس مایکروسافت</Link>
+          <Link to='/' className='title-product-site-footer text-decoration-none text-color-main text-st-blog-suggested w-100 ItemSiteFooter price-product-site-footer'>لپ تاپ سرفیس مایکروسافت</Link>
         </div>
         <div className="col-4 p-0 d-flex justify-content-center">
-          <span className='price-product-site-footer text-st-blog-suggested text-color-main w-100 d-flex justify-content-end' style={{ fontSize: '14px' }}>51,000,000 تومان</span>
+          <span className='price-product-site-footer text-st-blog-suggested text-color-main w-100 d-flex justify-content-end'>51,000,000 تومان</span>
         </div>
       </div>
     </>
@@ -210,7 +202,7 @@ export function ItemSiteFooter(prop) {
   return (
     <>
       <div className='d-flex w-75'>
-        <Link to='/' className='text-decoration-none text-st-blog-suggested text-color-main ItemSiteFooter' style={{ width: 'max-content', fontSize: '14px' }}>{prop.item}</Link>
+        <Link to='/' className='text-decoration-none text-st-blog-suggested text-color-main ItemSiteFooter fs-ItemSiteFooter'>{prop.item}</Link>
       </div>
     </>
   )
@@ -221,7 +213,7 @@ export function NamadWeb(prop) {
     <>
       <div className="col-sm-4 col-md-3 col-xl-4 col-3 col-namd-img p-lg-namad-img h-100">
         <Link to='/' className='w-100 h-100 d-flex justify-content-center align-items-center'>
-          <img src={`./assets/img/Namad/${prop.src}`} alt="" style={{ width: '100%' }} />
+          <img src={`./assets/img/Namad/${prop.src}`} className='w-100' alt="" />
         </Link>
       </div>
     </>
@@ -244,9 +236,23 @@ export function SiteFooterServices(prop) {
       <Link to='/' className="col-lg-1 p-0 col-6 text-decoration-none text-color-main">
         <div className='w-100 h-100 d-flex flex-column row-gap-2 align-items-center justify-content-center'>
           <img src={prop.src} alt="" />
-          <span style={{fontSize:'12px'}}>{prop.title}</span>
+          <span style={{ fontSize: '12px' }}>{prop.title}</span>
         </div>
       </Link>
+    </>
+  )
+}
+
+export function CallInfoItemFooter(prop) {
+  return (
+    <>
+      <div className='d-flex flex-row justify-content-between'>
+        <span style={{ width: 'max-content' }} className='fs-call-info-item-footer ps-4'>{prop.title}</span>
+        <span className='fs-call-info-item-footer d-flex flex-nowrap align-items-center justify-content-center'>
+          <span>{prop.value}</span>
+          {prop.children}
+        </span>
+      </div>
     </>
   )
 }

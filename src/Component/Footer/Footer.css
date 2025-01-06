@@ -28,12 +28,12 @@
   padding: 0 !important;
 }
 
-.socials-footer{
+.socials-footer {
   color: var(--subtext-color-main) !important;
   transition: 200ms;
 }
 
-.socials-footer:hover{
+.socials-footer:hover {
   color: var(--text-color-main) !important;
 }
 
@@ -45,6 +45,19 @@
   top: 0;
   left: 0;
   background-color: var(--bg-head-section);
+}
+
+.fs-ItemSiteFooter {
+  width: max-content;
+  font-size: 14px;
+}
+
+.price-product-site-footer {
+  font-size: 14px;
+}
+
+.fs-call-info-item-footer {
+  font-size: 12px;
 }
 
 @media only screen and (min-width:992px) {
@@ -69,6 +82,7 @@
   .col-namd-img {
     width: 20.66666667% !important;
   }
+
   .p-lg-namad-img {
     padding: 0 !important;
   }
