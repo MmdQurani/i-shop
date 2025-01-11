@@ -2,7 +2,7 @@ import React from 'react'
 
 function Category() {
   return (
-    <main>Category</main>
+    <main className='bg-main'>Category</main>
   )
 }
 

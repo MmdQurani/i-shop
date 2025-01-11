@@ -7,7 +7,7 @@ function HeadSection(prop) {
   return (
     <>
       {prop.moreItems ?
-        <div className='head-section d-flex flex-row justify-content-between align-items-center mt-4 mb-4'>
+        <div className='head-section bg-main d-flex flex-row justify-content-between align-items-center mt-4 mb-4'>
           <Link to={`${prop.Link}`} className='head-section-left bg-main pe-3 text-decoration-none fs-HeadSection-link'>
             <FaChevronCircleLeft fontSize={22} className='icon-head-section me-3' />
             مشاهده همه

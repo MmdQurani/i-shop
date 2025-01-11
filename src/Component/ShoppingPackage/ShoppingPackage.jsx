@@ -5,7 +5,7 @@ import { PriceCard } from '../BoxCards/BoxCards'
 
 function ShoppingPackage() {
   return (
-    <div className='package_section text-color-main mt-4 d-flex justify-content-center align-items-center' style={{ height: 'max-content' }}>
+    <div className='package_section bg-main text-color-main mt-4 d-flex justify-content-center align-items-center' style={{ height: 'max-content' }}>
 
       <div className="row w-100 h-100" dir='rtl'>
         <div className="banner_package mt-2 col-xl-8 col-xxl-9 col-12">

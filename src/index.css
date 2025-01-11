@@ -10,6 +10,7 @@
 
 body {
   font-family: Dirooz !important;
+  background-color: var(--bg-main) !important;
 }
 
 #root{

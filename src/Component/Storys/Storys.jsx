@@ -75,7 +75,7 @@ function Storys() {
       >
 
         {imgUrl.map(item =>
-          <SwiperSlide key={item.id} className='justify-content-center d-flex flex-column align-items-center row-gap-2'>
+          <SwiperSlide key={item.id} className='justify-content-center bg-main d-flex flex-column align-items-center row-gap-2'>
             <button className='parent-profile-story'>
               <img src={`${item.src}`} className='profile-story' alt="" />
             </button>

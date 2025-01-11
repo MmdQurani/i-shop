@@ -8,7 +8,7 @@ import NavigationBtnCard from '../NavigationBtnCard/NavigationBtnCard';
 
 function PopularBrandsSlider(prop) {
   return (
-    <div className='PopularBrands'>
+    <div className='PopularBrands bg-main'>
       <>
         <HeadSection moreItems={null} title={`برندهای محبوب`} link='/' />
 
