@@ -44,7 +44,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -57,7 +57,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -70,7 +70,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -83,7 +83,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -96,7 +96,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -109,7 +109,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -122,7 +122,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -135,7 +135,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -148,7 +148,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>
@@ -161,7 +161,7 @@ function PopularCategories() {
 
             <SwiperSlide className=' bg-main rounded-3 PopularCategories-slider-box-shadow my-auto'>
               <Link to='/' className='text-decoration-none'>
-                <div className='w-100 h-100 d-flex flex-column'>
+                <div className='w-100 h-100 d-flex flex-column bg-main'>
                   <div style={{ width: '100%', height: '70%' }} className='d-flex justify-content-center align-items-center'>
                     <img src="assets/img/PopularCategories/9.jpg" style={{ width: '5rem' }} alt="" />
                   </div>

@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 function BoxCards(prop) {
   return (
     <>
-      <Card style={{ width: '100%', height: '95%' }}>
+      <Card style={{ width: '100%', height: '95%' }} className='bg-main'>
         <div style={{ width: '150px' }} className='py-4 mx-auto'>
           <Card.Img variant="top" src={prop.src} style={{ width: '100%' }} />
         </div>

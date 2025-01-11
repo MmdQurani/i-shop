@@ -4,11 +4,11 @@ import './NavigationBtnCard.css'
 
 function NavigationBtnCard(prop) {
   return (
-    <div dir='rtl' className='navigation-btn-st d-md-flex d-none flex-row justify-content-between'>
-      <button className='swiper-next-button' id={prop.next}>
+    <div dir='rtl' className='navigation-btn-st bg-main d-md-flex d-none flex-row justify-content-between'>
+      <button className='swiper-next-button bg-main' id={prop.next}>
         <FaAngleRight className='icon-swiper' />
       </button>
-      <button className='swiper-prev-button' id={prop.prev}>
+      <button className='swiper-prev-button bg-main' id={prop.prev}>
         <FaAngleLeft className='icon-swiper' />
       </button>
     </div>

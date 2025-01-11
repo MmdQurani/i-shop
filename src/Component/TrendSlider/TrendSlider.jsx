@@ -76,7 +76,7 @@ function TrendSlider() {
 
         <div className="col-12 d-flex justify-content-center p-0">
 
-          <div className="row w-100" dir='rtl'>
+          <div className="row w-100 bg-main justify-content-center align-items-center row-gap-3" dir='rtl'>
 
             <div className="col-12 col-lg-5 trend-card-slider-box-st" style={{overflow:'hidden'}}>
               <div className='h-trend-card-slider-box' style={{width:'100%'}}>

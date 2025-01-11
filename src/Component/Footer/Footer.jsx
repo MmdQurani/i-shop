@@ -6,7 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <footer className='w-100 h-100 footer-shadow'>
+    <footer className='w-100 h-100 footer-shadow bg-main'>
       <div className='p-0 d-flex flex-column h-100 container mt-5 py-5 justify-content-center align-items-center' style={{ height: 'max-content' }}>
 
         <div className="Accesses row row-gap-5 w-100 justify-content-center" dir='rtl'>

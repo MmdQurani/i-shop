@@ -84,7 +84,7 @@ export function BannerBlogMain() {
 export function SuggestedBlog(prop) {
   return (
     <div className="col-12 p-0">
-      <div className={`${!prop.flagBorder ? '' : 'SuggestedBlog'} position-relative w-100 h-100 d-flex justify-content-center align-items-center`}>
+      <div className={`${!prop.flagBorder ? '' : 'SuggestedBlog'} position-relative bg-main w-100 h-100 d-flex justify-content-center align-items-center`}>
 
         <div className="row w-100 h-100">
           <div className="col-4 px-0">
