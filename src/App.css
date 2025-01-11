@@ -1,4 +1,4 @@
-:root{
+:root {
   --bg-main: #FFFFFF;
   --bg-offcanvas: #fffffff8;
   --bg-btn: #F04055;
@@ -20,8 +20,13 @@
 .text-color-main {
   color: var(--text-color-main) !important;
 }
+
 .sub-text-color-main {
   color: var(--subtext-color-main) !important;
+}
+
+.sub-text-color-main.active {
+  color: var(--text-color-main) !important;
 }
 
 .text-color-two {
