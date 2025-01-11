@@ -6,6 +6,7 @@ import { Offcanvas } from 'react-bootstrap';
 import { IoMenu } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import './Topbar.css'
+import { NavbarItemsBtn } from '../NavbarBtns/NavbarBtns';
 
 function Topbar() {
 
@@ -38,19 +39,25 @@ function Topbar() {
                       <img src="assets/img/Logo/logo1.jpg" width={150} alt="" />
                     </li>
                   </ul>
-                  <SearchBox/>
-                  <ul className='m-0 p-0 d-flex flex-column row-gap-3'>
-                    <li className='list-group-item pb-4 d-flex flex-column row-gap-3'>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>صفحه اصلی</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>صفحات قالب</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>فروشگاه</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>سوالات متداول</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>شگفت انگیزشو</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>وبلاگ</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>وبلاگ</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>وبلاگ</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>وبلاگ</Link>
-                    <Link to='/' className='link-st pb-4' style={{ borderBottom: '1px solid #1e36bd30' }}>وبلاگ</Link>
+                  <SearchBox />
+                  <ul className='m-0 p-0 d-flex flex-column row-gap-3' style={{listStyle:'none'}}>
+                    <li className='py-2 px-2 rounded-2' >
+                      <NavbarItemsBtn to='/' title='صفحه اصلی' />
+                    </li>
+                    <li className='py-2 px-2 rounded-2' >
+                      <NavbarItemsBtn to='/' title='صفحات قالب' />
+                    </li>
+                    <li className='py-2 px-2 rounded-2' >
+                      <NavbarItemsBtn to='/shop' title='فروشگاه' />
+                    </li>
+                    <li className='py-2 px-2 rounded-2' >
+                      <NavbarItemsBtn to='/faqs' title='سوالات متداول' />
+                    </li>
+                    <li className='py-2 px-2 rounded-2' >
+                      <NavbarItemsBtn to='/offers' title='شگفت انگیزشو' />
+                    </li>
+                    <li className='py-2 px-2 rounded-2' >
+                      <NavbarItemsBtn to='/blogs' title='وبلاگ' />
                     </li>
                   </ul>
                 </Offcanvas.Body>
