@@ -4,26 +4,78 @@ import ArchiveContentTitle from '../../Component/ArchiveContentTitle/ArchiveCont
 import SideRightCategory from '../../Component/SideRightCategory/SideRightCategory'
 import { IoSearch } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import BoxCards from '../../Component/BoxCards/BoxCards';
+import { SwiperSlide } from 'swiper/react';
 
 function Category() {
   return (
-    <main className='Category bg-main'>
+    <div className='Category bg-main'>
       <ArchiveContentTitle />
 
       <div className='content-category row mt-4' dir='rtl'>
 
         <div className="col-xxl-3 col-xl-4 col-lg-4 p-0 d-lg-flex d-none">
-          <SideRightCategory />
+          <SideRightCategory>
+            <SwiperSlide>
+              <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+            </SwiperSlide>
+            <SwiperSlide>
+              <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+            </SwiperSlide>
+          </SideRightCategory>
         </div>
 
         <div className="col-xxl-9 col-xl-8 col-lg-8 col-12">
-          <div className='main-content-category'>
+          <div className='main-content-category d-flex flex-column justify-content-center align-items-center' >
             <SortingProducts />
+
+            <div className='products-list-box row row-gap-4 w-100 justify-content-center align-items-center py-4'>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
+              </div>
+            </div>
+            
           </div>
         </div>
 
       </div>
-    </main>
+    </div>
   )
 }
 
