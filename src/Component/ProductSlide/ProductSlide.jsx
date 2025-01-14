@@ -57,7 +57,7 @@ function ProductSlide(prop) {
                       slidesPerView: 3, // سه اسلاید برای صفحه نمایش بزرگ  
                     },
                   }}
-                  className='px-2 swiper-st'
+                  className='px-2 py-3'
                 >
 
                   {prop.children}
@@ -118,7 +118,7 @@ function ProductSlide(prop) {
                       slidesPerView: 4, // سه اسلاید برای صفحه نمایش بزرگ  
                     }
                   }}
-                  className='px-2 bg-btn swiper-st'
+                  className='px-2 bg-btn py-3'
                 >
 
                   {prop.children}
@@ -173,7 +173,7 @@ function ProductSlide(prop) {
                       slidesPerView: 4, // سه اسلاید برای صفحه نمایش بزرگ  
                     }
                   }}
-                  className='px-2 swiper-st'
+                  className='px-2 py-3'
                 >
 
                   {prop.children}

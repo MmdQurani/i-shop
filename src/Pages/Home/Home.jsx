@@ -14,7 +14,7 @@ import PopularBrands from '../../Component/PopularBrands/PopularBrands'
 
 function Home() {
   return (
-    <main className='Home bg-main'>
+    <div className='Home bg-main'>
       <Story />
       <TrendSlider />
       <PopularCategories />
@@ -27,7 +27,7 @@ function Home() {
       <ShoppingPackage />
       <BlogComponent />
       <PopularBrands />
-    </main>
+    </div>
   )
 }
 
