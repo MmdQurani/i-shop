@@ -1,4 +1,4 @@
-import React , { useState } from 'react'
+import React, { useState } from 'react'
 import { useRoutes } from 'react-router-dom'
 import RoutesValue from './Routes'
 import Header from './Component/Header/Header'
@@ -11,11 +11,11 @@ function App() {
 
   return (
     <>
-    <Header></Header>
-    <Container>
-    {setRoutes}
-    </Container>
-    <Footer></Footer>
+      <Header></Header>
+      <main className='container'>
+        {setRoutes}
+      </main>
+      <Footer></Footer>
     </>
   )
 }

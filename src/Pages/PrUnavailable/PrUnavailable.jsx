@@ -2,7 +2,7 @@ import React from 'react'
 
 function PrUnavailable() {
   return (
-    <main>PrUnavailable</main>
+    <div>PrUnavailable</div>
   )
 }
 
