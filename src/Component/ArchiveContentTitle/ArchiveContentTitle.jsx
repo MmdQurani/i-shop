@@ -2,15 +2,15 @@ import React from 'react'
 import './ArchiveContentTitle.css'
 import { Link } from 'react-router-dom'
 
-function ArchiveContentTitle() {
+function ArchiveContentTitle(prop) {
   return (
     <>
       <div className="archive-content-title d-flex justify-content-between">
-        <span className='text-color-main' dir='rtl'>20 محصول</span>
+        <span className='text-color-main d-flex' dir='rtl'>{prop.countItem}</span>
 
         <ol className="breadcrumb breadcrumb-style">
           <li className="breadcrumb-item">
-            <span className='text-color-main'>فروشگاه</span>
+            <span className='text-color-main'>{prop.pageName}</span>
           </li>
 
           <li className="breadcrumb-item active">

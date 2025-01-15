@@ -11,7 +11,7 @@ import { MdKeyboardArrowLeft } from 'react-icons/md';
 function Category() {
   return (
     <div className='Category bg-main'>
-      <ArchiveContentTitle />
+      <ArchiveContentTitle pageName='فروشگاه' countItem='20 محصول' />
 
       <div className='content-category row mt-4' dir='rtl'>
         <div className="col-xxl-3 col-xl-4 col-lg-4 p-0 d-lg-flex d-none">
