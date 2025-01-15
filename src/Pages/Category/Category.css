@@ -16,6 +16,29 @@
   column-gap: 0.5rem !important;
 }
 
+.arrow-icon-hover {
+  transition: 200ms !important;
+}
+
+.item-filtering-product:hover .arrow-icon-hover {
+  color: var(--text-hover) !important;
+  transform: translateX(5px);
+}
+
+.Filtering-Products-Section-List::-webkit-scrollbar {
+  width: 4px;
+}
+
+.Filtering-Products-Section-List::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.Filtering-Products-Section-List::-webkit-scrollbar-thumb {
+  background: #0008322f;
+  border-radius: 10px;
+}
+
+
 @media only screen and (min-width:768px) {
   .search-Sorting-products {
     width: max-content !important;
