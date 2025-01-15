@@ -9,7 +9,7 @@ function NavigationBtnCard(prop) {
         <FaAngleRight className='icon-swiper' />
       </button>
       <button className='swiper-prev-button bg-main' id={prop.prev}>
-        <FaAngleLeft className='icon-swiper' />
+          
       </button>
     </div>
   )

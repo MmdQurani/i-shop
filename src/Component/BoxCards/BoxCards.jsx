@@ -20,7 +20,7 @@ function BoxCards(prop) {
             </div>
           </Link>
 
-          <div className='w-100 d-flex justify-content-between align-items-center'>
+          <div className='w-100 d-flex justify-content-between align-items-center' dir='ltr'>
             <PriceCard price='55,000,000' />
 
             <BtnCards />
