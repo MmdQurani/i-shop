@@ -10,11 +10,11 @@ function BtnTopbar(prop) {
           <button style={{ boxShadow: '-2px 2px 5px #f0405588' }} className='btn bg-btn px_lg py-2 rounded-3 fs-6'><span>سبد خرید</span> <span>0</span></button>
         </Link>
         <Link to='/login'>
-          <button style={{ boxShadow: '-2px 2px 5px #0000001f' }} className='btn bg-main text-color-main px_lg py-2 rounded-3'>
-            <span className='fs-6'>
-              <span className='d_inline_lg'>ورود / ثبت نام</span>
-              <LuUser2 className='ms-1' color='#00144a' fontSize={18} />
-            </span>
+          <button style={{ boxShadow: '-2px 2px 5px #0000001f' }} className='btn px-3 bg-main text-color-main px_lg py-2 rounded-3'>
+            <div className='fs-6 d-flex justify-content-center align-items-center'>
+              <span className='d_inline_lg me-2'>ورود / ثبت نام</span>
+              <LuUser2 className='m-0' color='#00144a' fontSize={18} />
+            </div>
           </button>
         </Link>
       </div>
