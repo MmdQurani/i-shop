@@ -6,7 +6,6 @@ import { IoSearch } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import BoxCards from '../../Component/BoxCards/BoxCards';
 import { SwiperSlide } from 'swiper/react';
-import { FaAngleLeft } from 'react-icons/fa';
 import { MdKeyboardArrowLeft } from 'react-icons/md';
 
 function Category() {
@@ -15,9 +14,8 @@ function Category() {
       <ArchiveContentTitle />
 
       <div className='content-category row mt-4' dir='rtl'>
-
         <div className="col-xxl-3 col-xl-4 col-lg-4 p-0 d-lg-flex d-none">
-          <div className='w-100 h-100 d-flex flex-column align-items-center'>
+          <div className='w-100 d-flex flex-column align-items-center pb-4' style={{height:'max-content'}}>
             <SideRightCategory>
               <SwiperSlide>
                 <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
@@ -30,7 +28,73 @@ function Category() {
               </SwiperSlide>
             </SideRightCategory>
 
-            <FilteringProductsSection />
+            <FilteringProductsSection title='دسته بندی نتایج'>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+            </FilteringProductsSection>
+
+            <FilteringProductsSection title='برند ها'>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>شیائومی</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>شیائومی</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>شیائومی</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>شیائومی</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>شیائومی</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>شیائومی</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+              <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
+                <Link to='/' className='fs-6 text-decoration-none text-color-main'>شیائومی</Link>
+                <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
+              </li>
+            </FilteringProductsSection>
+
+            <div class="existing-products-checkbox form-check form-switch bg-main card d-flex flex-row justify-content-between align-items-center w-100 py-3 mt-4">
+              <sapn class="form-check-label fs-6 text-color-main">نمایش کالاهای موجود</sapn>
+              <input class="form-check-input m-0" style={{height:'1.5rem' , width:'3rem'}} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+            </div>
+
           </div>
         </div>
 
@@ -116,41 +180,14 @@ export function SortingProducts() {
   )
 }
 
-export function FilteringProductsSection() {
+export function FilteringProductsSection(prop) {
   return (
     <>
       <div className='Filtering-Products-Section mt-4 bg-main card w-100 d-flex flex-column px-3' style={{ minHeight: '319px' }}>
         <span className='fs-6 text-color-main py-4 position-relative'>دسته بندی نتایج</span>
         <hr className='p-0 m-0 sub-text-color-main' />
-        <ul className="list-group Filtering-Products-Section-List w-100 p-0 mt-4 border-0" style={{overflowY:'scroll' , height:'200px'}}>
-          <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
-            <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
-            <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
-          </li>
-          <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
-            <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
-            <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
-          </li>
-          <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
-            <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
-            <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
-          </li>
-          <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
-            <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
-            <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
-          </li>
-          <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
-            <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
-            <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
-          </li>
-          <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
-            <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
-            <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
-          </li>
-          <li className="list-group-item item-filtering-product border-0 py-2 mt-1 d-flex flex-row justify-content-between align-items-center">
-            <Link to='/' className='fs-6 text-decoration-none text-color-main'>ساعت هوشمند</Link>
-            <MdKeyboardArrowLeft className='arrow-icon-hover fs-4 text-color-main' />
-          </li>
+        <ul className="list-group Filtering-Products-Section-List w-100 p-0 mt-4 border-0" style={{ overflowY: 'scroll', height: '200px' }}>
+          {prop.children}
         </ul>
       </div>
     </>
