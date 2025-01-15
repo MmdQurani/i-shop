@@ -20,7 +20,7 @@
 }
 
 .fs-price-card {
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
 }
 
 .fs-price-card.disabled {
@@ -29,7 +29,7 @@
 }
 
 .fs-btn-card {
-  font-size: 1rem !important;
+  font-size: 0.8rem !important;
 }
 
 @media only screen and (min-width:1200px) {
@@ -47,9 +47,9 @@
 
 @media only screen and (max-width:400px) {
   .fs-btn-card {
-    font-size: 0.7rem !important;
+    font-size: 0.65rem !important;
   }
   .fs-price-card {
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
   }
 }
