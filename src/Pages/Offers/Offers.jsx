@@ -41,6 +41,10 @@ function Offers() {
           </div>
         </div>
 
+        <div className='w-100 d-flex justify-content-center align-items-center mt-5'>
+          <button className='More-items btn text-color-main card py-2 px-4' style={{ backgroundColor: '#E8EBF4' }}>بارگذاری بیشتر</button>
+        </div>
+
       </div>
     </>
   )
