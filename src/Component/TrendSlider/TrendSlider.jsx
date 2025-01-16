@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Scrollbar, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import './TrendSlider.css'
-import { Link } from 'react-router-dom';
 import TrendCard from './TrendCard/TrendCard';
 import TrendCardSlider from './TrendCardSlider/TrendCardSlider';
+import BannerSlider from '../BannerSlider/BannerSlider'
 
 function TrendSlider() {
 
@@ -47,31 +45,7 @@ function TrendSlider() {
       <div className='row'>
 
         <div className='col-12'>
-          <Swiper
-            modules={[Scrollbar, Autoplay ]}
-            navigation={true}
-            autoplay={{
-              delay: 4500, // فاصله بین اسلایدها به میلی‌ثانیه  
-              disableOnInteraction: false, // متوقف نشود با تعاملات کاربر  
-            }}
-            spaceBetween={0}
-            loop={true}
-            slidesPerView={1}
-            pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            style={{ height: 'max-content' }}
-            className='py-3'
-          >
-
-            {trendSrc.map(item =>
-              <SwiperSlide key={item.id} >
-                <Link to='/shop'>
-                  <img className='trend-img-st' src={item.src} alt="" />
-                </Link>
-              </SwiperSlide>
-            )}
-
-          </Swiper>
+          <BannerSlider items={trendSrc} />
         </div>
 
         <div className="col-12 d-flex justify-content-center p-0">
