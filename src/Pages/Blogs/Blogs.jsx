@@ -47,8 +47,8 @@ function Blogs() {
           <BannerSlider items={blogBanner} />
         </div>
 
-        <div className='blog-latest mt-5 d-flex flex-column justify-content-start'>
-          <HeadSection moreItems={false} link='/' title={`جدیدترین مطالب وبلاگ`} />
+        <div className='latest-blog mt-5 d-flex flex-column justify-content-start'>
+          <HeadSection moreItems={true} link='/' title={`جدیدترین`} />
 
           <div className="row w-100 h-100 justify-content-center mx-auto row-gap-4 mt-2" dir='rtl'>
             <div className="col-xl-6 col-md-6 col-12">
@@ -75,10 +75,28 @@ function Blogs() {
 
         </div>
 
-        <div className="blog-trend mt-5 w-100 h-100 d-flex flex-column justify-content-start">
-          <HeadSection moreItems={false} link='/' title={`جدیدترین مطالب وبلاگ`} />
+        <div className="Most-visited-blog mt-5 d-flex flex-column justify-content-start">
+          <HeadSection moreItems={false} link='/' title={`پربازدید ترین`} />
 
-          <div className="row row-gap-4" dir='rtl'>
+          <div className="row mt-2 row-gap-4" dir='rtl'>
+            <div className="col-xl-6 col-12">
+              <BlogCardHorizontal />
+
+            </div>
+
+            <div className="col-xl-6 col-12">
+              <BlogCardHorizontal />
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div className="trend-blog mt-5 w-100 h-100 d-flex flex-column justify-content-start">
+          <HeadSection moreItems={false} link='/' title={`پربحث ترین`} />
+
+          <div className="row row-gap-4 mt-2" dir='rtl'>
             <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
               <BlogCard />
             </div>
@@ -176,6 +194,37 @@ export function BlogCard() {
                 <FiMessageSquare className='ms-1' />
                 1
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export function BlogCardHorizontal() {
+  return (
+    <>
+      <div class="card p-0 w-100 h-100">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="./assets/img/BlogImg/mag3.jpg" className='w-100 h-100 rounded-2' style={{ objectFit: 'cover' }} />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body row-gap-2 py-4 px-4 d-flex flex-column align-items-start">
+              <h5 class="card-title fs-6 text-color-main">دلایلی برای خرید گوشی ناتینگ فون یک</h5>
+              <p class="card-text lh-lg sub-text-color-main" style={{ fontSize: '13px' }}>دلایل خرید گوشی ۱ Nothing Phone بسیار قانع‌کننده‌ هستند، با توجه به نوع طراحی پیشرو، سخت‌افزار قدرتمند و قیمت مناسب، گوشی ناتینگ دلایل کافی برای خرید را در اختیار کاربر قرار می‌دهد.</p>
+              <div className="d-flex w-100 h-100 flex-row justify-content-between align-items-center px-2 text-color-main" style={{ fontSize: '13px' }}>
+                <div className='d-flex flex-row column-gap-1 align-items-center'>
+                  <FaRegClock />
+                  <span className='me-1'>15</span>
+                  <span>دقیقه</span>
+                </div>
+                <span>
+                  <FiMessageSquare className='ms-1' />
+                  1
+                </span>
+              </div>
             </div>
           </div>
         </div>
