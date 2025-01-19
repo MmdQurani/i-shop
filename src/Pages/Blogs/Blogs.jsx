@@ -75,6 +75,34 @@ function Blogs() {
 
         </div>
 
+        <div className="blog-trend mt-5 w-100 h-100 d-flex flex-column justify-content-start">
+          <HeadSection moreItems={false} link='/' title={`جدیدترین مطالب وبلاگ`} />
+
+          <div className="row row-gap-4" dir='rtl'>
+            <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+              <BlogCard />
+            </div>
+            <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+              <BlogCard />
+            </div>
+            <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+              <BlogCard />
+            </div>
+            <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+              <BlogCard />
+            </div>
+            <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+              <BlogCard />
+            </div>
+            <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+              <BlogCard />
+            </div>
+            <div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-12">
+              <BlogCard />
+            </div>
+          </div>
+        </div>
+
       </div>
     </>
   )
