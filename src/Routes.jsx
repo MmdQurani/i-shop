@@ -15,7 +15,7 @@ import NotPage from "./Pages/NotPage/NotPage";
 const RoutesValue = [
   {path : '/' , element : <Home></Home>},
   {path : '/shop' , element : <Category></Category>},
-  {path : '/product' , element : <Product></Product>},
+  {path : '/product/:productParams' , element : <Product></Product>},
   {path : '/unproduct' , element : <PrUnavailable></PrUnavailable>},
   {path : '/offers' , element : <Offers></Offers>},
   {path : '/blogs' , element : <Blogs></Blogs>},
