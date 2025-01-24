@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Category.css'
 import ArchiveContentTitle from '../../Component/ArchiveContentTitle/ArchiveContentTitle'
 import SideRightCategory from '../../Component/SideRightCategory/SideRightCategory'
@@ -7,15 +7,23 @@ import { Link } from 'react-router-dom';
 import BoxCards from '../../Component/BoxCards/BoxCards';
 import { SwiperSlide } from 'swiper/react';
 import { MdKeyboardArrowLeft } from 'react-icons/md';
+import data from '../../Datas';
 
 function Category() {
+  const [productItem, setProductItem] = useState(data);
+
+  useEffect(() => {
+    const sliceData = productItem.slice(0, 9);
+    setProductItem(sliceData)
+  }, [])
+
   return (
     <div className='Category bg-main'>
       <ArchiveContentTitle pageName='فروشگاه' countItem='20 محصول' />
 
       <div className='content-category row mt-4' dir='rtl'>
         <div className="col-xxl-3 col-xl-4 col-lg-4 p-0 d-lg-flex d-none">
-          <div className='w-100 d-flex flex-column align-items-center pb-4' style={{height:'max-content'}}>
+          <div className='w-100 d-flex flex-column align-items-center pb-4' style={{ height: 'max-content' }}>
             <SideRightCategory>
               <SwiperSlide>
                 <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
@@ -90,9 +98,9 @@ function Category() {
               </li>
             </FilteringProductsSection>
 
-            <div class="existing-products-checkbox form-check form-switch bg-main card d-flex flex-row justify-content-between align-items-center w-100 py-3 mt-4">
-              <sapn class="form-check-label fs-6 text-color-main">نمایش کالاهای موجود</sapn>
-              <input class="form-check-input m-0" style={{height:'1.5rem' , width:'3rem'}} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+            <div className="existing-products-checkbox form-check form-switch bg-main card d-flex flex-row justify-content-between align-items-center w-100 py-3 mt-4">
+              <sapn className="form-check-label fs-6 text-color-main">نمایش کالاهای موجود</sapn>
+              <input className="form-check-input m-0" style={{ height: '1.5rem', width: '3rem' }} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
             </div>
 
           </div>
@@ -103,42 +111,11 @@ function Category() {
             <SortingProducts />
 
             <div className='products-list-box row row-gap-4 w-100 justify-content-center align-items-center py-4'>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
-              <div className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
-                <BoxCards src='./assets/img/Products/2-150x150.png' title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' price='55,000,000' />
-              </div>
+              {productItem.map(item =>
+                <div key={item.id} className="col-xxl-4 col-md-6 col-sm-9 col-10 h-100">
+                  <BoxCards to={item.id} src={item.src} title={item.name} price={item.price} />
+                </div>
+              )}
             </div>
 
           </div>

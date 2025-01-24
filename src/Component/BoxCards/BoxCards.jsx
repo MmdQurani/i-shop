@@ -14,7 +14,7 @@ function BoxCards(prop) {
         </div>
         <Card.Body>
 
-          <Link to='/shop' className='text-decoration-none'>
+          <Link to={`/product/${prop.to}`} className='text-decoration-none'>
             <div className='d-flex flex-column justify-content-center align-items-start'>
               <span className='fs-6 text-color-main lh-lg' dir='rtl'>{prop.title}</span>
             </div>
