@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import './Product.css'
 import { useLocation, useParams } from 'react-router-dom'
 import data from '../../Datas';
 import ArchiveContentTitle from '../../Component/ArchiveContentTitle/ArchiveContentTitle';
-
+import { InnerImageZoom } from 'react-inner-image-zoom';
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 function Product() {
   const [productItem, setProductItem] = useState(data);
   const location = useLocation();
@@ -26,7 +28,16 @@ function Product() {
               <div className="product-box bg-main card py-4 px-4 mt-4">
                 <div className="row" dir='rtl'>
                   <div className="col-5">
-                    <div className='bg-danger'>two</div>
+                    <div className='bg-main d-flex justify-content-center align-items-center w-100 h-100'>
+                      <InnerImageZoom
+                        src="../assets/img/Products/4.png"
+                        zoomSrc="../assets/img/Products/4.png"
+                        zoomType="hover"
+                        zoomPreload={true}
+                        zoomScale={1.8}
+                      />
+
+                    </div>
                   </div>
                   <div className="col-7">
                     <div className='bg-danger'>one</div>
