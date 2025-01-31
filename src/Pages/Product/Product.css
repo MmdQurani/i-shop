@@ -3,6 +3,10 @@
   height: 100% !important;
 }
 
+.iiz {
+  border-radius: 1rem !important;
+}
+
 .iiz>* {
   cursor:default !important;
 }

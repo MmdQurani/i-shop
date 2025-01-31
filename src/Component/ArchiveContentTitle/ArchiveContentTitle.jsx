@@ -8,8 +8,8 @@ function ArchiveContentTitle(prop) {
       <div className="archive-content-title d-flex justify-content-between">
         <span className='text-color-main d-flex' dir='rtl'>{prop.countItem}</span>
 
-        <ol className="breadcrumb breadcrumb-style">
-          <li className="breadcrumb-item">
+        <ol className="breadcrumb breadcrumb-style d-flex flex-column-reverse flex-sm-row align-items-end row-gap-2">
+          <li className="breadcrumb-item text-end">
             <span className='text-color-main'>{prop.pageName}</span>
           </li>
 
