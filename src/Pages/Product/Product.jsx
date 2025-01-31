@@ -7,10 +7,10 @@ import { InnerImageZoom } from 'react-inner-image-zoom';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 function Product() {
   const [productItem, setProductItem] = useState(data);
-  const location = useLocation();
-  const [currentPath, setCurrentPath] = useState(location.pathname);
   const { productParams } = useParams();
-  const [productIndex, setProductIndex] = useState([])
+  const [productIndex, setProductIndex] = useState([]);
+  const [samplesImg , setSamplesImg] = useState('../assets/img/Products/7.jpg')
+  
 
   useEffect(() => {
     setProductIndex(productItem.filter(item => item.id == productParams))
@@ -30,44 +30,20 @@ function Product() {
                   <div className="col-lg-5 col-12">
                     <div className='bg-main d-flex flex-column row-gap-4 justify-content-center align-items-center w-100 h-100'>
                       <InnerImageZoom
-                        src="../assets/img/Products/4.png"
-                        zoomSrc="../assets/img/Products/4.png"
+                        src={samplesImg}
+                        zoomSrc={samplesImg}
                         zoomType="hover"
                         zoomPreload={true}
                         zoomScale={1.8}
                       />
 
                       <div className='row Subsamples-img-parent column-gap-4 row-gap-3 w-100 justify-content-center'>
-                        <div className='col-xxl-2 col-xl-3 col-lg-3 col-md-2 col-sm-3 col-3 p-0'>
-                          <div className='Subsamples-img w-100 h-100 p-1 rounded-2'>
-                            <img src="../assets/img/Products/4.png" className='w-100' alt="" />
-                          </div>
-                        </div>
-                        <div className='col-xxl-2 col-xl-3 col-lg-3 col-md-2 col-sm-3 col-3 p-0'>
-                          <div className='Subsamples-img w-100 h-100 p-1 rounded-2'>
-                            <img src="../assets/img/Products/4.png" className='w-100' alt="" />
-                          </div>
-                        </div>
-                        <div className='col-xxl-2 col-xl-3 col-lg-3 col-md-2 col-sm-3 col-3 p-0'>
-                          <div className='Subsamples-img w-100 h-100 p-1 rounded-2'>
-                            <img src="../assets/img/Products/4.png" className='w-100' alt="" />
-                          </div>
-                        </div>
-                        <div className='col-xxl-2 col-xl-3 col-lg-3 col-md-2 col-sm-3 col-3 p-0'>
-                          <div className='Subsamples-img w-100 h-100 p-1 rounded-2'>
-                            <img src="../assets/img/Products/4.png" className='w-100' alt="" />
-                          </div>
-                        </div>
-                        <div className='col-xxl-2 col-xl-3 col-lg-3 col-md-2 col-sm-3 col-3 p-0'>
-                          <div className='Subsamples-img w-100 h-100 p-1 rounded-2'>
-                            <img src="../assets/img/Products/4.png" className='w-100' alt="" />
-                          </div>
-                        </div>
-                        <div className='col-xxl-2 col-xl-3 col-lg-3 col-md-2 col-sm-3 col-3 p-0'>
-                          <div className='Subsamples-img w-100 h-100 p-1 rounded-2'>
-                            <img src="../assets/img/Products/4.png" className='w-100' alt="" />
-                          </div>
-                        </div>
+                        <SubsamplesImg ImgSrc='../assets/img/Products/7.jpg' setSample={setSamplesImg} />
+                        <SubsamplesImg ImgSrc='../assets/img/Products/9.jpg' setSample={setSamplesImg} />
+                        <SubsamplesImg ImgSrc='../assets/img/Products/7.jpg' setSample={setSamplesImg} />
+                        <SubsamplesImg ImgSrc='../assets/img/Products/9.jpg' setSample={setSamplesImg} />
+                        <SubsamplesImg ImgSrc='../assets/img/Products/7.jpg' setSample={setSamplesImg} />
+                        <SubsamplesImg ImgSrc='../assets/img/Products/9.jpg' setSample={setSamplesImg} />
                       </div>
 
                     </div>
@@ -82,6 +58,18 @@ function Product() {
           </>
         )
       })}
+    </>
+  )
+}
+
+export function SubsamplesImg(prop) {
+  return (
+    <>
+      <div className='col-xxl-2 col-xl-3 col-lg-3 col-md-2 col-sm-3 col-3 p-0'>
+        <div className='Subsamples-img w-100 h-100 p-1 rounded-2' onClick={() => prop.setSample(prop.ImgSrc)}>
+          <img src={prop.ImgSrc} className='w-100' alt="" />
+        </div>
+      </div>
     </>
   )
 }
