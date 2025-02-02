@@ -8,7 +8,7 @@
 }
 
 .iiz>* {
-  cursor:default !important;
+  cursor: default !important;
 }
 
 .Subsamples-img-parent {
@@ -16,14 +16,26 @@
   padding-left: 2.5rem !important;
 }
 
+.Subsamples-img {
+  border: 1px solid var(--bg-head-section);
+  cursor: pointer;
+}
+
+.text-line-clamp-6 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  /* تعداد خطوطی که می‌خواهید نمایش داده شود */
+  overflow: hidden;
+}
+
+.lh-32 {
+  line-height: 32px !important;
+}
+
 @media only screen and (max-width:576px) {
   .Subsamples-img-parent {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
   }
-}
-
-.Subsamples-img {
-  border: 1px solid var(--bg-head-section);
-  cursor: pointer;
 }
