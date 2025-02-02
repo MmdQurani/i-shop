@@ -37,6 +37,12 @@
   background-color: var(--bg-offcanvas) !important;
 }
 
+.prev-price {
+  color: var(--subtext-color-main);
+  text-decoration: line-through;
+  text-decoration-color: var(--text-color-main);
+}
+
 @media only screen and (min-width: 1600px) {
   .container {
     max-width: 1500px !important;

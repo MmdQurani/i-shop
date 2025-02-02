@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './Product.css'
-import { useLocation, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
 import data from '../../Datas';
 import ArchiveContentTitle from '../../Component/ArchiveContentTitle/ArchiveContentTitle';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import SampleImgProduct from '../../Component/SampleImgProduct/SampleImgProduct';
+import { PriceCard } from '../../Component/BoxCards/BoxCards';
+
 function Product() {
   const [productItem, setProductItem] = useState(data);
   const { productParams } = useParams();
@@ -39,11 +41,26 @@ function Product() {
 
                       <ProductInfoTitle title='ویژگی محصول' />
 
-                      <div className="row mt-3 row-gap-3">
+                      <div className="row mt-3 mb-3 row-gap-3">
                         <ProductFeatures featureTitle='رنگ' feature='آبی, قرمز, مشکی' />
                         <ProductFeatures featureTitle='گارانتی' feature='25 روزه' />
                         <ProductFeatures featureTitle='سایز' feature='بزرگ, کوچک' />
                         <ProductFeatures featureTitle='بلندگو' feature='استریو' />
+                      </div>
+
+                      <div className='d-flex flex-row justify-content-between align-items-center w-100 mt-4'>
+                        <div className='d-flex flex-row'>
+                          <Link to='/' className='btn bg-btn d-flex py-2 px-4'>
+                            <span>افزودن به سبد خرید</span>
+                          </Link>
+                        </div>
+                        <div className='d-flex flex-column align-items-end'>
+                          <span className='fs-6 prev-price'>50,000,000</span>
+                          <div className='d-flex flex-row align-items-center column-gap-2 text-color-main'>
+                            <p className='m-0 p-0 fs-3'>50,000,000</p>
+                            <span className='fs-6'>تومان</span>
+                          </div>
+                        </div>
                       </div>
 
                     </div>
