@@ -5,7 +5,7 @@ import data from '../../Datas';
 import ArchiveContentTitle from '../../Component/ArchiveContentTitle/ArchiveContentTitle';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import SampleImgProduct from '../../Component/SampleImgProduct/SampleImgProduct';
-import { PriceCard } from '../../Component/BoxCards/BoxCards';
+import { BiSolidDiscount } from "react-icons/bi";
 
 function Product() {
   const [productItem, setProductItem] = useState(data);
@@ -32,7 +32,7 @@ function Product() {
                   </div>
 
                   <div className="col-lg-7 col-12">
-                    <div className='d-flex flex-column'>
+                    <div className='d-flex flex-column justify-content-start h-100'>
                       <ProductTitle title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' />
 
                       <ProductInfoTitle title='توضیحات محصول' />
@@ -49,17 +49,13 @@ function Product() {
                       </div>
 
                       <div className='d-flex flex-row justify-content-between align-items-center w-100 mt-4'>
-                        <div className='d-flex flex-row'>
-                          <Link to='/' className='btn bg-btn d-flex py-2 px-4'>
-                            <span>افزودن به سبد خرید</span>
-                          </Link>
+                        <div className='d-flex flex-column row-gap-3'>
+                          <ShopingCardBtn />
+                          <NumberInput />
                         </div>
-                        <div className='d-flex flex-column align-items-end'>
-                          <span className='fs-6 prev-price'>50,000,000</span>
-                          <div className='d-flex flex-row align-items-center column-gap-2 text-color-main'>
-                            <p className='m-0 p-0 fs-3'>50,000,000</p>
-                            <span className='fs-6'>تومان</span>
-                          </div>
+                        <div className='d-flex flex-column align-items-end row-gap-2'>
+                          <PrevPrice />
+                          <PriceNow />
                         </div>
                       </div>
 
@@ -88,7 +84,7 @@ export function ProductTitle(prop) {
 export function ProductInfoTitle(prop) {
   return (
     <>
-      <span className='fs-6 sub-text-color-main mt-4'>{prop.title}</span>
+      <span className='fs-6 sub-text-color-main mt-5'>{prop.title}</span>
     </>
   )
 }
@@ -101,6 +97,50 @@ export function ProductFeatures(prop) {
           <span className='fs-price-card sub-text-color-main'>{prop.featureTitle}</span>
           <span className='fs-ItemSiteFooter text-color-main text-st-blog-suggested'>{prop.feature}</span>
         </div>
+      </div>
+    </>
+  )
+}
+
+export function ShopingCardBtn() {
+  return (
+    <>
+      <Link to='/' className='btn bg-btn d-flex py-2 px-2' style={{ width: 'max-content' }}>
+        <span className='shoping-card-title'>افزودن به سبد خرید</span>
+      </Link>
+    </>
+  )
+}
+
+export function NumberInput() {
+  return (
+    <>
+      <div class="number-input bg-main rounded-2 w-100 d-flex flex-row justify-content-center align-items-center">
+        <button className='text-color-main' onclick="decrease()">-</button>
+        <input type="number" id="product-quantity" value="1" min="1" />
+        <button className='text-color-main' onclick="increase()">+</button>
+      </div>
+    </>
+  )
+}
+
+export function PrevPrice() {
+  return (
+    <>
+      <div className='d-flex flex-row column-gap-1 align-items-center'>
+        <span className='prev-price'>50,000,000</span>
+        <BiSolidDiscount className='bg-btn rounded-2 discount-st' />
+      </div>
+    </>
+  )
+}
+
+export function PriceNow() {
+  return (
+    <>
+      <div className='d-flex flex-row align-items-center column-gap-1 text-color-main'>
+        <p className='m-0 p-0 Price-now'>50,000,000</p>
+        <span className='Currency-st px-2 rounded-2 py-1'>تومان</span>
       </div>
     </>
   )

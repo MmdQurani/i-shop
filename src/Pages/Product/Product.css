@@ -33,9 +33,93 @@
   line-height: 32px !important;
 }
 
+.Currency-st {
+  background-color: var(--text-color-main) !important;
+  color: var(--bg-main) !important;
+  font-size: 13px !important;
+}
+
+.Price-now {
+  font-size: calc(0.9rem + .6vw) !important;
+}
+
+.prev-price {
+  font-size: 1rem !important;
+}
+
+.discount-st {
+  width: 40px !important;
+  height: 25px !important;
+}
+
+.shoping-card-title {
+  font-size: 0.9rem !important;
+}
+
+.number-input {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px var(--bg-head-section), 0 0 15px var(--bg-head-section);
+}
+
+.number-input input[type="number"] {
+  width: 50px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  outline: none;
+  border-radius: 0;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  transition: border-color 0.3s;
+}
+
+.number-input button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0;
+}
+
+.number-input input[type="number"]::-webkit-outer-spin-button,
+.number-input input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 @media only screen and (max-width:576px) {
   .Subsamples-img-parent {
     padding-right: 0.5rem !important;
     padding-left: 0.5rem !important;
+  }
+
+  .Price-now {
+    font-size: calc(0.95rem + .6vw) !important;
+  }
+
+  .prev-price {
+    font-size: 0.85rem !important;
+  }
+
+  .Currency-st {
+    background-color: var(--text-color-main) !important;
+    color: var(--bg-main) !important;
+    font-size: 10px !important;
+  }
+
+  .discount-st {
+    width: 32px !important;
+    height: 20px !important;
+  }
+
+  .shoping-card-title {
+    font-size: 0.75rem !important;
   }
 }
