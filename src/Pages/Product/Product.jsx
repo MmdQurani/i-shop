@@ -7,6 +7,8 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import SampleImgProduct from '../../Component/SampleImgProduct/SampleImgProduct';
 import { BiSolidDiscount } from "react-icons/bi";
 
+import { FaCartShopping } from "react-icons/fa6";
+
 function Product() {
   const [productItem, setProductItem] = useState(data);
   const { productParams } = useParams();
@@ -48,7 +50,7 @@ function Product() {
                         <ProductFeatures featureTitle='بلندگو' feature='استریو' />
                       </div>
 
-                      <div className='d-flex flex-row justify-content-between align-items-center w-100 mt-4'>
+                      <div className='d-flex flex-column-sm row-gap-4 justify-content-between align-items-center w-100 mt-4'>
                         <div className='d-flex flex-column row-gap-3'>
                           <ShopingCardBtn />
                           <NumberInput />
@@ -105,8 +107,9 @@ export function ProductFeatures(prop) {
 export function ShopingCardBtn() {
   return (
     <>
-      <Link to='/' className='btn bg-btn d-flex py-2 px-2' style={{ width: 'max-content' }}>
+      <Link to='/' className='btn bg-btn d-flex py-2 px-2 flex-row column-gap-1 align-items-center' style={{ width: 'max-content' }}>
         <span className='shoping-card-title'>افزودن به سبد خرید</span>
+        <FaCartShopping fontSize={20} />
       </Link>
     </>
   )
@@ -119,14 +122,14 @@ export function NumberInput() {
   const decrease = () => {
     {
       count > 1 ?
-      setCount(prev => prev-1)
-      :
-      setCount(1)
+        setCount(prev => prev - 1)
+        :
+        setCount(1)
     }
   }
 
   const increase = () => {
-    setCount(prev => prev+1)
+    setCount(prev => prev + 1)
   }
 
   return (
