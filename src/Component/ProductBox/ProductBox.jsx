@@ -112,7 +112,7 @@ export function NumberInput() {
     <>
       <div className="number-input bg-main rounded-2 w-100 d-flex flex-row justify-content-center align-items-center">
         <button className='text-color-main' onClick={decrease}>-</button>
-        <input type="number" id="product-quantity" value={count} min="1" />
+        <input type="number" id="product-quantity" value={count} min="1" readOnly />
         <button className='text-color-main' onClick={increase}>+</button>
       </div>
     </>

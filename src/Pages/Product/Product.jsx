@@ -5,6 +5,7 @@ import data from '../../Datas';
 import ArchiveContentTitle from '../../Component/ArchiveContentTitle/ArchiveContentTitle';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import ProductBox from '../../Component/ProductBox/ProductBox';
+import FeatureOptions from '../../Component/FeatureOptions/FeatureOptions';
 
 function Product() {
   const [productItem, setProductItem] = useState(data);
@@ -19,14 +20,11 @@ function Product() {
     <>
       {productIndex.map(item => {
         return (
-          <>
-
-            <div className='product'>
-              <ArchiveContentTitle pageName={item.name} />
-              <ProductBox />
-            </div>
-
-          </>
+          <div className='product' key={item.id}>
+            <ArchiveContentTitle pageName={item.name} />
+            <ProductBox />
+            <FeatureOptions />
+          </div>
         )
       })}
     </>
