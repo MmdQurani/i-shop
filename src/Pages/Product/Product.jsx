@@ -113,12 +113,28 @@ export function ShopingCardBtn() {
 }
 
 export function NumberInput() {
+
+  const [count, setCount] = useState(1);
+
+  const decrease = () => {
+    {
+      count > 1 ?
+      setCount(prev => prev-1)
+      :
+      setCount(1)
+    }
+  }
+
+  const increase = () => {
+    setCount(prev => prev+1)
+  }
+
   return (
     <>
-      <div class="number-input bg-main rounded-2 w-100 d-flex flex-row justify-content-center align-items-center">
-        <button className='text-color-main' onclick="decrease()">-</button>
-        <input type="number" id="product-quantity" value="1" min="1" />
-        <button className='text-color-main' onclick="increase()">+</button>
+      <div className="number-input bg-main rounded-2 w-100 d-flex flex-row justify-content-center align-items-center">
+        <button className='text-color-main' onClick={decrease}>-</button>
+        <input type="number" id="product-quantity" value={count} min="1" />
+        <button className='text-color-main' onClick={increase}>+</button>
       </div>
     </>
   )
