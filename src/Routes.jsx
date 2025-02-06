@@ -12,14 +12,18 @@ import Cards from "./Pages/Cards/Cards";
 import Login from "./Pages/Login/Login";
 import NotPage from "./Pages/NotPage/NotPage";
 import ReviewProduct from "./Component/ReviewProduct/ReviewProduct";
-import PossibilityOfPayment from "./Component/PossibilityOfPayment/PossibilityOfPayment";
+import TechnicalSpecifications from "./Component/TechnicalSpecifications/TechnicalSpecifications";
+import UserComments from "./Component/UserComments/UserComments";
+import Question from "./Component/Question/Question";
 
 const RoutesValue = [
   {path : '/' , element : <Home></Home>},
   {path : '/shop' , element : <Category></Category>},
   {path : '/product/:productParams' , element : <Product></Product> , children:[
     {path : 'ReviewProduct' , element:<ReviewProduct></ReviewProduct>},
-    {path : 'PossibilityOfPayment' , element:<PossibilityOfPayment></PossibilityOfPayment>},
+    {path : 'TechnicalSpecifications' , element:<TechnicalSpecifications></TechnicalSpecifications>},
+    {path : 'UserComments' , element:<UserComments></UserComments>},
+    {path : 'Question' , element:<Question></Question>},
   ]},
   {path : '/unproduct' , element : <PrUnavailable></PrUnavailable>},
   {path : '/offers' , element : <Offers></Offers>},
