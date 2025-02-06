@@ -32,13 +32,13 @@ function Product() {
                 <Link className='text-color-main text-decoration-none text-st-blog-suggested' to='ReviewProduct'>نقد و بررسی محصول</Link>
               </li>
               <li className='col-lg-3 col-6 d-flex justify-content-center'>
-                <Link className='text-color-main text-decoration-none text-st-blog-suggested' to='PossibilityOfPayment'>مشخصات فنی</Link>
+                <Link className='text-color-main text-decoration-none text-st-blog-suggested' to='TechnicalSpecifications'>مشخصات فنی</Link>
               </li>
               <li className='col-lg-3 col-6 d-flex justify-content-center'>
-                <Link className='text-color-main text-decoration-none text-st-blog-suggested' to='ReviewProduct'>دیدگاه کاربران</Link>
+                <Link className='text-color-main text-decoration-none text-st-blog-suggested' to='UserComments'>دیدگاه کاربران</Link>
               </li>
               <li className='col-lg-3 col-6 d-flex justify-content-center'>
-                <Link className='text-color-main text-decoration-none text-st-blog-suggested' to='PossibilityOfPayment'>پرسش و پاسخ</Link>
+                <Link className='text-color-main text-decoration-none text-st-blog-suggested' to='Question'>پرسش و پاسخ</Link>
               </li>
             </ul>
 
