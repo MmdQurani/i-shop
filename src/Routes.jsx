@@ -11,11 +11,16 @@ import AboutUs from "./Pages/AboutUs/AboutUs";
 import Cards from "./Pages/Cards/Cards";
 import Login from "./Pages/Login/Login";
 import NotPage from "./Pages/NotPage/NotPage";
+import ReviewProduct from "./Component/ReviewProduct/ReviewProduct";
+import PossibilityOfPayment from "./Component/PossibilityOfPayment/PossibilityOfPayment";
 
 const RoutesValue = [
   {path : '/' , element : <Home></Home>},
   {path : '/shop' , element : <Category></Category>},
-  {path : '/product/:productParams' , element : <Product></Product>},
+  {path : '/product/:productParams' , element : <Product></Product> , children:[
+    {path : 'ReviewProduct' , element:<ReviewProduct></ReviewProduct>},
+    {path : 'PossibilityOfPayment' , element:<PossibilityOfPayment></PossibilityOfPayment>},
+  ]},
   {path : '/unproduct' , element : <PrUnavailable></PrUnavailable>},
   {path : '/offers' , element : <Offers></Offers>},
   {path : '/blogs' , element : <Blogs></Blogs>},
