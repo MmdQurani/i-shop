@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaAngleLeft , FaAngleRight } from "react-icons/fa6";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa6";
 import './NavigationBtnCard.css'
 
 function NavigationBtnCard(prop) {
@@ -9,7 +9,7 @@ function NavigationBtnCard(prop) {
         <FaAngleRight className='icon-swiper' />
       </button>
       <button className='swiper-prev-button bg-main' id={prop.prev}>
-          
+        <FaAngleLeft className='icon-swiper' />
       </button>
     </div>
   )
