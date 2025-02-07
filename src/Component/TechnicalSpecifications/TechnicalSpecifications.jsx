@@ -26,7 +26,7 @@ function TechnicalSpecifications() {
 export function LiListTechnicalSpecifications(prop) {
   return (
     <>
-      <li className='list-group-item li-list-TechnicalSpecifications d-flex flex-row column-gap-5'>
+      <li className='list-group-item li-list-TechnicalSpecifications d-flex flex-row column-gap-5 fs-6'>
         <span className='sub-text-color-main w-25'>{prop.Attribute}</span>
         <span className='text-color-main w-100'>{prop.Feature}</span>
       </li>
