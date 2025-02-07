@@ -5,6 +5,7 @@
   --bg-head-section: #1e36bd19;
   --text-color-main: #021959;
   --subtext-color-main: #98A1BE;
+  --text-color-content: #0650A3;
   --text-hover: #f3273f;
 }
 
@@ -23,6 +24,10 @@
 
 .sub-text-color-main {
   color: var(--subtext-color-main) !important;
+}
+
+.text-color-content {
+  color: var(--text-color-content) !important;
 }
 
 .sub-text-color-main.active {
