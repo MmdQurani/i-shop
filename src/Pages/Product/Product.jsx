@@ -7,6 +7,7 @@ import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import ProductBox from '../../Component/ProductBox/ProductBox';
 import FeatureOptions from '../../Component/FeatureOptions/FeatureOptions';
 import ReviewProduct from '../../Component/ReviewProduct/ReviewProduct';
+import BannerNewProduct from '../../Component/ProductSlide/BannerNewProduct/BannerNewProduct';
 
 function Product() {
   const [productItem, setProductItem] = useState(data);
@@ -51,6 +52,8 @@ function Product() {
                 <Outlet />
               </>
             }
+
+            <BannerNewProduct />
           </div>
         )
       })}
