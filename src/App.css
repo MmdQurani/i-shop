@@ -7,6 +7,7 @@
   --subtext-color-main: #98A1BE;
   --text-color-content: #0650A3;
   --text-hover: #f3273f;
+  --bg-color-1: #E5E8EE;
 }
 
 .bg-main {
@@ -42,10 +43,14 @@
   background-color: var(--bg-offcanvas) !important;
 }
 
+.bg-color-1 {
+  background-color: var(--bg-color-1) !important;
+}
+
 .prev-price {
-  color: var(--subtext-color-main);
-  text-decoration: line-through;
-  text-decoration-color: var(--text-color-main);
+  color: var(--subtext-color-main) !important;
+  text-decoration: line-through !important;
+  text-decoration-color: var(--text-color-main) !important;
 }
 
 @media only screen and (min-width: 1600px) {
