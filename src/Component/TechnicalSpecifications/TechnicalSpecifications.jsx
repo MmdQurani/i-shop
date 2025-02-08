@@ -2,7 +2,7 @@ import React from 'react'
 
 function TechnicalSpecifications() {
   return (
-    <div className='TechnicalSpecifications d-flex flex-column bg-main product-content py-4 px-4' dir='rtl'>
+    <div className='TechnicalSpecifications d-flex flex-column bg-main product-content py-5 px-4' dir='rtl'>
       <span className='title-1-review-product text-color-content fs-5 mt-2'>توضیحات تکمیلی</span>
 
       <ul className='list-group p-0 list-group-flush row-gap-4 mt-4'>

@@ -15,7 +15,7 @@ function ProductBox() {
           </div>
 
           <div className="col-lg-7 col-12">
-            <div className='d-flex flex-column justify-content-start h-100'>
+            <div className='product-box-content d-flex flex-column justify-content-start h-100 pt-4'>
               <ProductTitle title='گوشی موبایل اپل مدل پرومکس دو سیم‌ کارت نات اکتیو سیزده' />
 
               <ProductInfoTitle title='توضیحات محصول' />
