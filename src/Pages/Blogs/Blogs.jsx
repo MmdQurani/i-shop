@@ -7,6 +7,7 @@ import { LuUser } from 'react-icons/lu';
 import { MdOutlineDateRange } from 'react-icons/md';
 import { FiMessageSquare } from 'react-icons/fi';
 import { FaRegClock } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Blogs() {
 
@@ -180,7 +181,7 @@ export function BlogCard() {
         <div class="card w-100 h-100">
           <img src="./assets/img/BlogImg/pci1.png" class="card-img-top" alt="" />
           <div class="card-body py-4 px-3 row-gap-3 d-flex flex-column justify-content-center align-items-start">
-            <h5 class="card-title fs-6 text-color-main fs-6 text-color-main">دلایلی برای خرید گوشی ناتینگ فون یک</h5>
+            <Link to='/' class="card-title text-decoration-none fs-6 text-color-main fs-6 text-color-main">دلایلی برای خرید گوشی ناتینگ فون یک</Link>
             <p className="card-text lh-lg sub-text-color-main " style={{ fontSize: '14px' }}>
               دلایل خرید گوشی ۱ Nothing Phone بسیار قانع‌کننده‌ هستند، با توجه به نوع طراحی پیشرو، سخت‌افزار قدرتمند و قیمت مناسب، گوشی ناتینگ دلایل کافی برای خرید را در اختیار کاربر قرار می‌دهد.
             </p>
@@ -212,7 +213,7 @@ export function BlogCardHorizontal() {
           </div>
           <div class="col-md-8">
             <div class="card-body row-gap-2 py-4 px-4 d-flex flex-column align-items-start">
-              <h5 class="card-title fs-6 text-color-main">دلایلی برای خرید گوشی ناتینگ فون یک</h5>
+              <Link to='/' class="card-title text-decoration-none fs-6 text-color-main">دلایلی برای خرید گوشی ناتینگ فون یک</Link>
               <p class="card-text lh-lg sub-text-color-main" style={{ fontSize: '13px' }}>دلایل خرید گوشی ۱ Nothing Phone بسیار قانع‌کننده‌ هستند، با توجه به نوع طراحی پیشرو، سخت‌افزار قدرتمند و قیمت مناسب، گوشی ناتینگ دلایل کافی برای خرید را در اختیار کاربر قرار می‌دهد.</p>
               <div className="d-flex w-100 h-100 flex-row justify-content-between align-items-center px-2 text-color-main" style={{ fontSize: '13px' }}>
                 <div className='d-flex flex-row column-gap-1 align-items-center'>
